@@ -3,3 +3,16 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/example/public_html/
     - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R config $DEPLOYPATH
+    - /bin/cp -R core $DEPLOYPATH
+    - /bin/cp -R html $DEPLOYPATH
+    - /bin/cp -R models $DEPLOYPATH
+    - /bin/cp -R views $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp ajax.php $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp theme.css $DEPLOYPATH
+   
+    
+    
