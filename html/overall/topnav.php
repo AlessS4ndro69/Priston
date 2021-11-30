@@ -59,7 +59,7 @@
           </div>
           <div class="col-md-6 py-5 wow zoomIn">
             <div class="img-fluid text-center">
-              <img src="assets/img/mat.gif" alt="">
+              <img src="assets/img/mat.gif" width="330" height="250">
             </div>
           </div>
         </div>

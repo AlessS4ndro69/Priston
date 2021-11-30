@@ -236,9 +236,9 @@
              
              <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <?php
-                include(HTML_DIR . 'formSubscribe.html')
+                include(HTML_DIR . 'formSubscribe.html');
               ?>
-        			
+        		  	
         		</div>
         	</div>
           </div>
@@ -270,37 +270,46 @@
              
              <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <?php
-                include(HTML_DIR . 'formSubscribe.html')
+                include(HTML_DIR . 'formSubscribe.html');
               ?>
         			
         		</div>
         	</div>
         </div>
           </div>
-        </div>
-        <!--
+        
+        
         <div class="col-lg-4 py-3 wow zoomIn">
           <div class="card-pricing">
             <div class="header">
-              <div class="pricing-type">Professional</div>
+              <div class="pricing-type">Seguidor de tiktok</div>
               <div class="price">
-                <span class="dollar">$</span>
-                <h1>99<span class="suffix">.99</span></h1>
+                <span class="dollar">S/.</span>
+                <h1>69<span class="suffix">.00</span></h1>
               </div>
-              <h5>Per Month</h5>
+              <h5>Al mes</h5>
             </div>
             <div class="body">
-              <p>25 Analytics <span class="suffix">Campaign</span></p>
-              <p>1,300 Change <span class="suffix">Keywords</span></p>
-              <p>Social Media <span class="suffix">Reviews</span></p>
-              <p>1 Free <span class="suffix">Optimization</span></p>
-              <p>24/7 <span class="suffix">Support</span></p>
+              <p>Clases en vivo <span class="suffix"></span></p>
+              <p>Mas de 100 videos explicativos  <span class="suffix"></span></p>
+              <p>Teoria y práctica <span class="suffix"></span></p>
+              <p>Material en pdf <span class="suffix"></span></p>
+              <p>24 horas disponible <span class="suffix"></span></p>
             </div>
             <div class="footer">
-              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              <button type="button" class="btn btn-pricing btn-block" data-toggle="modal" data-target="#registerModal" data-whatever="@mdo">Subscribe</button>
+              
+              
+              <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <?php
+                  include(HTML_DIR . 'formSubscribe.html');
+                ?>
+                
+              </div>
+              </div>
             </div>
           </div>
-        </div>-->
+        </div>
 
       </div>
     </div>  <!--.container --> 

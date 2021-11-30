@@ -18,12 +18,14 @@
       case 'register':
 
           require('core/bin/ajax/goRegister.php');
-
+        
         break;
 
       case 'lostpass':
 
           require('core/bin/ajax/goLostpass.php');
+
+        break;
       case 'loginAdmin':
         
           require('core/bin/ajax/goLoginAdmin.php');

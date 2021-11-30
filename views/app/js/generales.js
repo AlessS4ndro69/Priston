@@ -4,7 +4,7 @@ function validate() {
       var flag = 1;
       var first_name = $('#fname').val();
       var last_name = $('#lname').val();
-      var dni = $('#dni').val();
+      var dni = $('#dnisuscribe').val();
       var city = $('#city').val();
       var phone = $('#phone').val();
       //var recibo = $('#recibo').val();
@@ -12,17 +12,20 @@ function validate() {
   
       $(".error").remove();
   
-      
+      if(flag)console.log("dni"+dni);
       if (first_name.length < 1) {
         $('#fname').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        console.log("bandera apagada firstana,");
         flag = 0;
       }
       if (last_name.length < 1) {
         $('#lname').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        console.log("bandera apagada firstana,");
         flag = 0;
       }
       if (dni.length < 1) {
-        $('#dni').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        $('#dnisuscribe').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        console.log("bandera apagada firstana,");
         flag = 0;
       }/* else {
         var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
@@ -31,9 +34,11 @@ function validate() {
           $('#email').after('<span class="error">Enter a valid email</span>');
         }
       }*/
+
       if (email.length < 1) {
         
         $('#email').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        console.log("bandera apagada firstana,");
         flag = 0;
       }/*else{
         var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
@@ -47,10 +52,12 @@ function validate() {
       
       if (city.length < 1) {
         $('#city').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        console.log("bandera apagada firstana,");
         flag = 0;
       }
       if (phone.length < 1) {
         $('#phone').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        console.log("bandera apagada firstana,");
         flag = 0;
       }
       //if (password.length < 8) {
@@ -62,7 +69,10 @@ function validate() {
       }*/
 
       console.log(first_name);
-      if(flag){goRegister();}
+      if(flag){
+        console.log("bandera activa");
+        goRegister();
+      }
       
 }
 
