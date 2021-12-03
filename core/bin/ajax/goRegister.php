@@ -74,7 +74,9 @@
       
       $_SESSION['app_id']= $resulset['estudiante_id'];
       $_SESSION['app_usuario']= $resulset['estudiante_dni'];
-      //$_SESSION['time_online']= time() - (60*6);
+      $_SESSION['time_online']= time() - (60*6);
+      
+      
       echo 1;      
 
     }

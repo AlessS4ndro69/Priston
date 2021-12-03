@@ -13,7 +13,7 @@ function goRegister() {
   
     //sesion= document.getElementById('session_login').checked ? true: false;
   
-    form= "user=" + userFirstName + userLastName + "&dni=" + dni + "&phone=" + phone + "&city=" + city + "&email=" + email;
+    form= "user=" + userFirstName +" "+ userLastName + "&dni=" + dni + "&phone=" + phone + "&city=" + city + "&email=" + email;
     //form= "user=" + userFirstName + userLastName;
     console.log(form);
   //Si el navegador es muy viejo, se usa ActiveXObject... de resto, todos los navegadores usan XMLHttpRequest
@@ -37,6 +37,7 @@ function goRegister() {
   
         //Si todo salió bien...
             if(connect.responseText== 1){
+              /*
               result = '<div class="container">';
               result+= '<div class="row">';
               
@@ -61,7 +62,27 @@ function goRegister() {
               result+='</div>';
               result+='</div>';
               result+='</div>';
-              __('_AJAX_LOGIN_').innerHTML= result;
+              __('_AJAX_LOGIN_').innerHTML= result;*/
+
+              result='<div class="row">';
+              result+='<div class="modal-dialog">';
+              result+=    '<div class="modal-content">';
+              result+=  '<div class="modal-body">';
+            result+='<div class="thank-you-pop">';
+            result +=               '<img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">';
+            result +=               '<h1 class="fs-title">Thank you!</h1>';
+            result +=               '<h3 class="fs-subtitle"> Tu subscripción se realizo con exito </h3>';
+            result +=               '<input type="button"  class="submit action-button"  value="Cerrar" onclick=window.location.href="index.php?view=sala" />';
+                                    
+            result +=             '</div>';
+            result +='</div>';
+            result +='</div>';
+            result +='</div>';
+            result +='</div>';
+
+            __('_AJAX_LOGIN_').innerHTML= result;
+            //window.location.reload();
+            window.location.href='index.php?view=sala';
               console.log("devolvio 1");
               //window.location.reload();
               //window.location.href='index.php?view=sala';
