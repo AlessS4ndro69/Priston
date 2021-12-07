@@ -88,26 +88,25 @@
         <div class="divider mx-auto"></div>
       </div>
       <div class="row mt-5">
-        <div class="col-lg-4 py-3 wow zoomIn">
+        
+      <div class="col-lg-4 py-3 wow zoomIn">
           <div class="card-pricing">
             <div class="header">
-              <div class="pricing-type">Standar</div>
+              <div class="pricing-type">Seguidor de tiktok</div>
               <div class="price">
                 <span class="dollar">S/.</span>
-                <h1>180.<span class="suffix">.00</span></h1>
+                <h1>69<span class="suffix">.00</span></h1>
               </div>
               <h5>Al mes</h5>
             </div>
             <div class="body">
-              <p>Clases en vivo<span class="suffix"> Interacción </span></p>
-              <p>Material de estudio<span class="suffix"> Pdf</span></p>
-              <p>Ejercicios en clase<span class="suffix"> Práctica</span></p>
-              <p>Ranking todos los meses<span class="suffix"> Competencia</span></p>
-              <p>Becas para los mejores alumnos<span class="suffix"> Motivación</span></p>
+              <p>Clases en vivo <span class="suffix"></span></p>
+              <p>Mas de 100 videos explicativos  <span class="suffix"></span></p>
+              <p>Teoria y práctica <span class="suffix"></span></p>
+              <p>Material en pdf <span class="suffix"></span></p>
+              <p>24 horas disponible <span class="suffix"></span></p>
             </div>
             <div class="footer">
-            
-
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
 
 
@@ -133,10 +132,10 @@
                 </div>
               </div>
             </div>
-        	</div>
-          </div>
-        </div>
 
+              </div>
+              </div>
+            </div>
         <div class="col-lg-4 py-3 wow zoomIn">
           <div class="card-pricing marked">
             <div class="header">
@@ -187,54 +186,56 @@
         </div>
           </div>
         
-        
-        <div class="col-lg-4 py-3 wow zoomIn">
-          <div class="card-pricing">
-            <div class="header">
-              <div class="pricing-type">Seguidor de tiktok</div>
-              <div class="price">
-                <span class="dollar">S/.</span>
-                <h1>69<span class="suffix">.00</span></h1>
-              </div>
-              <h5>Al mes</h5>
-            </div>
-            <div class="body">
-              <p>Clases en vivo <span class="suffix"></span></p>
-              <p>Mas de 100 videos explicativos  <span class="suffix"></span></p>
-              <p>Teoria y práctica <span class="suffix"></span></p>
-              <p>Material en pdf <span class="suffix"></span></p>
-              <p>24 horas disponible <span class="suffix"></span></p>
-            </div>
-            <div class="footer">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
-
-
-            <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                  <div class="modal-body">
-                  <?php
-                    include(HTML_DIR . 'formSubscribe.html');
-                  ?>
-                  
+              <div class="col-lg-4 py-3 wow zoomIn">
+              <div class="card-pricing">
+                <div class="header">
+                  <div class="pricing-type">Standar</div>
+                  <div class="price">
+                    <span class="dollar">S/.</span>
+                    <h1>180.<span class="suffix">.00</span></h1>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                  <h5>Al mes</h5>
+                </div>
+                <div class="body">
+                  <p>Clases en vivo<span class="suffix"> Interacción </span></p>
+                  <p>Material de estudio<span class="suffix"> Pdf</span></p>
+                  <p>Ejercicios en clase<span class="suffix"> Práctica</span></p>
+                  <p>Ranking todos los meses<span class="suffix"> Competencia</span></p>
+                  <p>Becas para los mejores alumnos<span class="suffix"> Motivación</span></p>
+                </div>
+                <div class="footer">
+                
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
+
+
+                <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      <div class="modal-body">
+                      <?php
+                        include(HTML_DIR . 'formSubscribe.html');
+                      ?>
+                      
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-              </div>
               </div>
             </div>
+        
+        
           </div>
         </div>
 
