@@ -1,10 +1,10 @@
 
 function goRegister() {
 
-    var connect, userFirstName, result, userLastName, dni, phone, city, email;
+    var connect, userFirstName, result,  dni, phone, city, email;
   
     userFirstName= document.getElementById('fname').value;
-    userLastName= document.getElementById('lname').value;
+    
     dni= document.getElementById('dnisuscribe').value;
     phone= document.getElementById('phone').value;
     city= document.getElementById('city').value;
@@ -13,7 +13,7 @@ function goRegister() {
   
     //sesion= document.getElementById('session_login').checked ? true: false;
   
-    form= "user=" + userFirstName +" "+ userLastName + "&dni=" + dni + "&phone=" + phone + "&city=" + city + "&email=" + email;
+    form= "user=" + userFirstName  + "&dni=" + dni + "&phone=" + phone + "&city=" + city + "&email=" + email;
     //form= "user=" + userFirstName + userLastName;
     console.log(form);
   //Si el navegador es muy viejo, se usa ActiveXObject... de resto, todos los navegadores usan XMLHttpRequest

@@ -3,7 +3,7 @@ function validate() {
     
       var flag = 1;
       var first_name = $('#fname').val();
-      var last_name = $('#lname').val();
+      //var last_name = $('#lname').val();
       var dni = $('#dnisuscribe').val();
       var city = $('#city').val();
       var phone = $('#phone').val();
@@ -18,11 +18,7 @@ function validate() {
         console.log("bandera apagada firstana,");
         flag = 0;
       }
-      if (last_name.length < 1) {
-        $('#lname').after('<h4 class="fs-subtitle">Completa este campo</h4>');
-        console.log("bandera apagada firstana,");
-        flag = 0;
-      }
+     
       if (dni.length < 1) {
         $('#dnisuscribe').after('<h4 class="fs-subtitle">Completa este campo</h4>');
         console.log("bandera apagada firstana,");
@@ -107,4 +103,20 @@ function __(id){
 
 function redirection(){
     setTimeout( function() { window.location.href = "index.php"; }, 1000 );
+}
+
+function autop(){
+  var iframe = document.getElementById("myFrame");
+  var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+  
+  function handleIframeKeyUp(evt) {
+      alert("Key up!");
+  }
+  
+  if (typeof iframeDoc.addEventListener != "undefined") {
+      iframeDoc.addEventListener("keyup", handleIframeKeyUp, false);
+  } else if (typeof iframeDoc.attachEvent != "undefined") {
+      iframeDoc.attachEvent("onkeyup", handleIframeKeyUp);
+  }
+
 }

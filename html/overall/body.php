@@ -78,130 +78,7 @@
       </div>
     </div> <!-- .container -->
   </div> <!-- .page-section -->
-<!--
-  <div class="page-section" id="about">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 py-3 wow fadeInUp">
-          <span class="subhead">About us</span>
-          <h2 class="title-section">The number #1 SEO Service Company</h2>
-          <div class="divider"></div>
 
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-          <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
-          <a href="about.html" class="btn btn-primary mt-3">Read More</a>
-        </div>
-        <div class="col-lg-6 py-3 wow fadeInRight">
-          <div class="img-fluid py-3 text-center">
-            <img src="assets/img/about_frame.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>  --.container --
-  </div> -- .page-section --
-
-  <div class="page-section bg-light">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="subhead">Our services</div>
-        <h2 class="title-section">How SEO Team Can Help</h2>
-        <div class="divider mx-auto"></div>
-      </div>
-
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
-            <div class="features">
-              <div class="header mb-3">
-                <span class="mai-business"></span>
-              </div>
-              <h5>OnSite SEO</h5>
-              <p>We analyse your website's structure, internal architecture & other key</p>
-            </div>
-          </div>
-        </div>
-
-    </div> -- .container --
-  </div> -- .page-section -->
-
-<!--
-  <div class="page-section banner-seo-check">
-    <div class="wrap bg-image" style="background-image: url(assets/img/bg_pattern.svg);">
-      <div class="container text-center">
-        <div class="row justify-content-center wow fadeInUp">
-          <div class="col-lg-8">
-            <h2 class="mb-4">Check your Website SEO</h2>
-            <form action="#">
-              <input type="text" class="form-control" placeholder="E.g google.com">
-              <button type="submit" class="btn btn-success">Check Now</button>
-            </form>
-          </div>
-        </div>
-      </div> -- .container --
-    </div> -- .wrap --
-  </div> -- .page-section -->
 
   <div class="page-section">
     <div class="container">
@@ -231,15 +108,31 @@
             <div class="footer">
             
 
-             <button type="button" class="btn btn-pricing btn-block" data-toggle="modal" data-target="#registerModal" data-whatever="@mdo">Subscribe</button>
-             
-             
-             <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <?php
-                include(HTML_DIR . 'formSubscribe.html');
-              ?>
-        		  	
-        		</div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
+
+
+            <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <div class="modal-body">
+                  <?php
+                    include(HTML_DIR . 'formSubscribe.html');
+                  ?>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         	</div>
           </div>
         </div>
@@ -265,15 +158,31 @@
             <div class="footer">
             
 
-             <button type="button" class="btn btn-pricing btn-block" data-toggle="modal" data-target="#registerModal" data-whatever="@mdo">Subscribe</button>
-             
-             
-             <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <?php
-                include(HTML_DIR . 'formSubscribe.html');
-              ?>
-        			
-        		</div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
+
+
+            <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <div class="modal-body">
+                  <?php
+                    include(HTML_DIR . 'formSubscribe.html');
+                  ?>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         	</div>
         </div>
           </div>
@@ -297,14 +206,32 @@
               <p>24 horas disponible <span class="suffix"></span></p>
             </div>
             <div class="footer">
-              <button type="button" class="btn btn-pricing btn-block" data-toggle="modal" data-target="#registerModal" data-whatever="@mdo">Subscribe</button>
-              
-              
-              <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <?php
-                  include(HTML_DIR . 'formSubscribe.html');
-                ?>
-                
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
+
+
+            <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <div class="modal-body">
+                  <?php
+                    include(HTML_DIR . 'formSubscribe.html');
+                  ?>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
               </div>
               </div>
             </div>
@@ -345,62 +272,4 @@
       </div>
     </div> <!-- .wrap -->
   </div> <!-- .page-section --> 
-  <!--
-  -- Blog --
-  <div class="page-section">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="subhead">Our Blog</div>
-        <h2 class="title-section">Read Latest News</h2>
-        <div class="divider mx-auto"></div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-lg-4 py-3 wow fadeInUp">
-          <div class="card-blog">
-            <div class="header">
-              <div class="post-thumb">
-                <img src="assets/img/blog/blog-1.jpg" alt="">
-              </div>
-            </div>
-            <div class="body">
-              <h5 class="post-title"><a href="#">Source of Content Inspiration</a></h5>
-              <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 py-3 wow fadeInUp">
-          <div class="card-blog">
-            <div class="header">
-              <div class="post-thumb">
-                <img src="assets/img/blog/blog-2.jpg" alt="">
-              </div>
-            </div>
-            <div class="body">
-              <h5 class="post-title"><a href="#">Source of Content Inspiration</a></h5>
-              <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 py-3 wow fadeInUp">
-          <div class="card-blog">
-            <div class="header">
-              <div class="post-thumb">
-                <img src="assets/img/blog/blog-3.jpg" alt="">
-              </div>
-            </div>
-            <div class="body">
-              <h5 class="post-title"><a href="#">Source of Content Inspiration</a></h5>
-              <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 mt-4 text-center wow fadeInUp">
-          <a href="blog.html" class="btn btn-primary">View More</a>
-        </div>
-      </div>
-    </div>
-  </div>-->
+ 
