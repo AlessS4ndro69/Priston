@@ -1,8 +1,6 @@
 
 <?php
 $db= new PDO('mysql:host=127.0.0.1; dbname=academia_priston', 'root', 'merino');
-
-
 //$db= new PDO('mysql:host=157.90.212.15; dbname=academia_priston', 'academia_root', 'J]L4@OhpN-ac');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $db->exec('SET CHARACTER SET utf8');
