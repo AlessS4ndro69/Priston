@@ -1,7 +1,43 @@
 <?php
 //include (HTML_DIR .'vistaPreviaCursos.html' );
 ?>
+ <!-- 16:9 aspect ratio -->
 
+
+ <div class="container">
+     
+     <div class="d-flex justify-content-center">
+       <div class="embed-responsive embed-responsive-16by9">
+       <iframe class="embed-responsive-item" src=<?php echo $frame[$n]["grabacion_frame"]?>  width="720" height="540" allow="autoplay" loading = "lazy"></iframe>
+       </div>
+     </div>
+  
+ </div>
+
+ <div class="container">
+   <div class="page-banner home-banner">
+   
+     
+     <div class="row align-items-center flex-wrap-reverse h-100">
+       
+     
+       <div class="col-md-6 py-5 wow fadeInLeft">
+         
+         <h1 class="mb-4">Inicia tu preparación con nosotros</h1>
+         <p class="text-lg text-grey mb-5">De la mano de docentes con amplia experiencia lograrás tu objetivo</p>
+         <a href="https://t.me/AcademiaPriston" class="btn btn-primary btn-split">Unete al grupo de Telegram <div class="fab"><span class="mai-logo-telegram"></span></div></a>
+       </div>
+       <div class="col-md-6 py-5 wow zoomIn">
+         <div class="img-fluid text-center">
+           
+           <img src="assets/img/mat.gif" width="330" height="250">
+         </div>
+       </div>
+     </div>
+     <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
+   </div>
+ </div>
+ 
 <?php
 include (HTML_DIR .'publicidad.html' );
 ?>
