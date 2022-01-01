@@ -8,6 +8,7 @@
           <div class="social-media-button">
             <a href="https://www.facebook.com/profile.php?id=100064984873323"><i class="mai-logo-facebook-f"></i></a>
             <a href="https://www.tiktok.com/@docente_nerito"><img src="assets/img/tiktok.svg" ></a>
+             <a href="https://t.me/AcademiaPriston"><i class="mai-logo-telegram"></i></a>
           </div>
         </div>
         <div class="col-lg-3 py-3">

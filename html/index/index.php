@@ -10,7 +10,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
     <div class="container">
         
-      <a href=base class="navbar-brand">Academia<span class="text-primary">Priston.</span></a>
+      <a href=base class="navbar-brand">Aprendo Fácil con <span class="text-primary">Priston.</span></a>
 
 <?php
   include(HTML_DIR . 'overall/topnav.php');

@@ -37,6 +37,12 @@
               <li class="nav-item">
                 <a class="nav-link" href=base>Inicio</a>
               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/1XE7tI8lNhNJuio85lESbkIPv9473EaOI/view?usp=sharing">Temario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/drive/u/0/folders/1jPFVf9JqA5gRxgDrVTC_mdnh7xOhPQO2">Biblioteca </a>
+              </li>
             </ul>
           </div>
 
@@ -53,7 +59,7 @@
                   <li class="breadcrumb-item active" ><?php echo $name?></li>
                 </ul>
               </nav>
-              <h1 class="text-center"><a href="https://meet.google.com/vtf-jykb-gjp">Ingresar al aula</a></h1>
+              <h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>
             </div>
           </div>
         </div>

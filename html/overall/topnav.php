@@ -12,14 +12,16 @@
                 <a class="nav-link" href="contact.html">Contacto</a>  
             </li> --> 
             <li class="nav-item active">
+              <a class="nav-link" href="https://drive.google.com/file/d/1u44gvyuaQ0dwIylHWBzV6lCyd6gKmMGa/view?usp=sharing">Descarga pdf</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href=base>Inicio</a>
             </li>
-            
             <?php
             //if(!isset($_SESSION['app_id'])){ ?>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLogin" data-whatever="@mdo">Ingresar</button>
 
-
+    
             <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="ModalLogin" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -75,13 +77,13 @@
 
 
     <div class="container">
-      <div class="page-banner home-banner">
+     
         <div class="d-flex justify-content-center">
           <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src=<?php echo $frame[$n]["grabacion_frame"]?>  width="720" height="540" allow="autoplay" loading = "lazy"></iframe>
           </div>
         </div>
-      </div> 
+     
     </div>
 
     <div class="container">

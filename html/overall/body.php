@@ -1,83 +1,10 @@
-<div class="page-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="assets/img/services/service-1.svg" alt="">
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Aritmética</h5>
-              <p>Dominarás las operaciones de la matemática </p>
-              <a href="https://t.me/AcademiaPriston" class="btn btn-primary">Mas...</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="assets/img/services/service-2.svg" alt="">
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Álgebra</h5>
-              <p>Realizarás calculos de manera rapida y correcta</p>
-              <a href="https://t.me/AcademiaPriston" class="btn btn-primary">Mas...</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="assets/img/services/service-3.svg" alt="">
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Razonamiento Matemático</h5>
-              <p>Desarrollarás tu capacidad de razonar.</p>
-              <a href="https://t.me/AcademiaPriston" class="btn btn-primary">Mas...</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="assets/img/services/service-1.svg" alt="">
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Psicotécnico</h5>
-              <p>Clases practicas con ejercicios en vivo. </p>
-              <a href="https://t.me/AcademiaPriston" class="btn btn-primary">Mas...</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="assets/img/services/service-2.svg" alt="">
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Trigonometría</h5>
-              <p>Aprende de una manera diferente sin memorizar formulas.</p>
-              <a href="https://t.me/AcademiaPriston" class="btn btn-primary">Mas...</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="assets/img/services/service-3.svg" alt="">
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Geometría</h5>
-              <p>Conoce el estudio de la Geometría con aplicación en la vida real.</p>
-              <a href="https://t.me/AcademiaPriston" class="btn btn-primary">Mas...</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- .container -->
-  </div> <!-- .page-section -->
+<?php
+//include (HTML_DIR .'vistaPreviaCursos.html' );
+?>
+
+<?php
+include (HTML_DIR .'publicidad.html' );
+?>
 
 
   <div class="page-section">
@@ -92,7 +19,7 @@
       <div class="col-lg-4 py-3 wow zoomIn">
           <div class="card-pricing">
             <div class="header">
-              <div class="pricing-type">Seguidor de tiktok</div>
+              <div class="pricing-type">Ciclo Anual</div>
               <div class="price">
                 <span class="dollar">S/.</span>
                 <h1>69<span class="suffix">.00</span></h1>
@@ -105,6 +32,9 @@
               <p>Teoria y práctica <span class="suffix"></span></p>
               <p>Material en pdf <span class="suffix"></span></p>
               <p>24 horas disponible <span class="suffix"></span></p>
+              <p>Ranking todos los meses<span class="suffix"> </span></p>
+              <p>Becas para los mejores alumnos<span class="suffix"></span></p>
+              <p>Duración de 4 meses <span class="suffix"></span></p>
             </div>
             <div class="footer">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
@@ -127,7 +57,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
                   </div>
                 </div>
               </div>
@@ -139,25 +69,25 @@
         <div class="col-lg-4 py-3 wow zoomIn">
           <div class="card-pricing marked">
             <div class="header">
-              <div class="pricing-type">Por inicio de ciclo</div>
+              <div class="pricing-type">Ciclo Verano Pre-inscripción</div>
               <div class="price">
                 <span class="dollar">S/.</span>
-                <h1>120<span class="suffix">.00</span></h1>
+                <h1>130<span class="suffix">.00</span></h1>
               </div>
-              <h5>Al mes</h5>
+              <h5>Único pago</h5>
             </div>
             <div class="body">
-              <p>Clases en vivo<span class="suffix"> Interacción </span></p>
-              <p>Material de estudio<span class="suffix"> Pdf</span></p>
-              <p>Ejercicios en clase<span class="suffix"> Práctica</span></p>
-              <p>Ranking todos los meses<span class="suffix"> Competencia</span></p>
-              <p>Becas para los mejores alumnos<span class="suffix"> Motivación</span></p>
-              <p>Disponibilidad de videos 24/7<span class="suffix"> Ambición</span></p>
+              <p>Clases en vivo<span class="suffix"> </span></p>
+              <p>Material de estudio<span class="suffix"></span></p>
+              <p>Ejercicios en clase<span class="suffix"> </span></p>
+              <p>Disponibilidad de videos 24/7<span class="suffix"> </span></p>
+              <p>Biblioteca virtual<span class="suffix"> </span></p>
+              <p>Duración de 5 semanas<span class="suffix"> </span></p>
             </div>
             <div class="footer">
             
 
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Inscripción</button>
 
 
             <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -177,7 +107,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
                   </div>
                 </div>
               </div>
@@ -189,19 +119,21 @@
               <div class="col-lg-4 py-3 wow zoomIn">
               <div class="card-pricing">
                 <div class="header">
-                  <div class="pricing-type">Standar</div>
+                  <div class="pricing-type">Ciclo Pre-policial</div>
                   <div class="price">
                     <span class="dollar">S/.</span>
-                    <h1>180.<span class="suffix">.00</span></h1>
+                    <h1>200.<span class="suffix">.00</span></h1>
                   </div>
                   <h5>Al mes</h5>
                 </div>
                 <div class="body">
-                  <p>Clases en vivo<span class="suffix"> Interacción </span></p>
-                  <p>Material de estudio<span class="suffix"> Pdf</span></p>
-                  <p>Ejercicios en clase<span class="suffix"> Práctica</span></p>
-                  <p>Ranking todos los meses<span class="suffix"> Competencia</span></p>
-                  <p>Becas para los mejores alumnos<span class="suffix"> Motivación</span></p>
+                  <p>Clases de Razonamiento Matemático<span class="suffix"></span></p>
+                  <p>Clases de Psicotécnico<span class="suffix"> </span></p>
+                  <p>100% Práctico resolución de ejercicios </span></p>
+                  <p>Material de estudio<span class="suffix"> </span></p>
+                  <p>Duración de dos meses<span class="suffix"> </span></p>
+                  
+                  
                 </div>
                 <div class="footer">
                 
@@ -226,7 +158,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" onclick="validate()">Ingresar</button>
+                        <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
                       </div>
                     </div>
                   </div>

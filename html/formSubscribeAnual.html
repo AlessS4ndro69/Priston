@@ -1,0 +1,49 @@
+<!-- multistep form -->
+
+
+
+<form>
+  <div id= "_AJAX_LOGIN_">
+  <div class="form-group">
+    <label for="fname" class="col-form-label">Nombre:</label>
+    <input type="text" class="form-control" id="fname">
+  </div>
+  <div class="form-group">
+    <label for="dnisuscribe" class="col-form-label">Dni:</label>
+    <input type="text" class="form-control" id="dnisuscribe">
+  </div>
+  <div class="form-group">
+    <label for="phone" class="col-form-label">Celular:</label>
+    <input type="text" class="form-control" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="city" class="col-form-label">Ciudad:</label>
+    <input type="text" class="form-control" id="city">
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-form-label">email:</label>
+    <input type="text" class="form-control" id="email">
+  </div>
+  <div id="paypal-button-container-P-1GU65695BT432792SMG3532Q"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AaenLbjGuh_dUPOOm9RMrJ0rZkaH5leU2gEg0UV1nG5Uok1VbYnmZo1tA9uQu0zSqRQomZexKGrXIlEx&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-1GU65695BT432792SMG3532Q'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-1GU65695BT432792SMG3532Q'); // Renders the PayPal button
+</script>
+</div>
+</form>

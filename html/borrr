@@ -1,0 +1,167 @@
+<div class="page-section">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="subhead">Planes</div>
+        <h2 class="title-section">Elige el plan que más se acomode a ti</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="row mt-5">
+        
+      <div class="col-lg-4 py-3 wow zoomIn">
+          <div class="card-pricing">
+            <div class="header">
+              <div class="pricing-type">Ciclo Anual</div>
+              <div class="price">
+                <span class="dollar">S/.</span>
+                <h1>69<span class="suffix">.00</span></h1>
+              </div>
+              <h5>Al mes</h5>
+            </div>
+            <div class="body">
+              <p>Clases en vivo <span class="suffix"></span></p>
+              <p>Mas de 100 videos explicativos  <span class="suffix"></span></p>
+              <p>Teoria y práctica <span class="suffix"></span></p>
+              <p>Ranking todos los meses<span class="suffix"> </span></p>
+              <p>Becas para los mejores alumnos<span class="suffix"> </span></p>
+              <p>Material en pdf <span class="suffix"></span></p>
+              <p>24 horas disponible <span class="suffix"></span></p>
+            </div>
+            <div class="footer">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribeAnual" data-whatever="@mdo">Subscribe</button>
+
+
+            <div class="modal fade" id="ModalSubscribeAnual" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalSubscribeAnual">Ingresa tus datos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <?php
+                        include(HTML_DIR . 'formSubscribeAnual.html');
+                    ?>
+                    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-3 wow zoomIn">
+          <div class="card-pricing marked">
+            <div class="header">
+              <div class="pricing-type">Ciclo Verano Preinscripción</div>
+              <div class="price">
+                <span class="dollar">S/.</span>
+                <h1>120<span class="suffix">.00</span></h1>
+              </div>
+              
+            </div>
+            <div class="body">
+              <p>Clases en vivo<span class="suffix"> </span></p>
+              <p>Material de estudio<span class="suffix"> </span></p>
+              <p>Ejercicios en clase<span class="suffix"> </span></p>
+              
+              
+              <p>Disponibilidad de videos 24/7</p>
+            </div>
+            <div class="footer">
+            
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribeVerano" data-whatever="@mdo">Subscribe</button>
+
+
+            <div class="modal fade" id="ModalSubscribeVerano" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalSubscribeVerano">Ingresa tus datos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <div class="modal-body">
+                  <?php
+                    include(HTML_DIR . 'formSubscribeVerano.html');
+                  ?>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        	</div>
+        </div>
+          </div>
+        
+              <div class="col-lg-4 py-3 wow zoomIn">
+              <div class="card-pricing">
+                <div class="header">
+                  <div class="pricing-type">Psicotécnico Prepolicial Ejercito</div>
+                  <div class="price">
+                    <span class="dollar">S/.</span>
+                    <h1>200.<span class="suffix">.00</span></h1>
+                  </div>
+                  <h5>Al mes</h5>
+                </div>
+                <div class="body">
+                <p>Razonamiento Matemático<span class="suffix"> </span></p>
+                <p>Psicotécnico<span class="suffix"> </span></p>
+                <p>100% práctico<span class="suffix"> </span></p>
+                  <p>Clases en vivo<span class="suffix"> </span></p>
+  
+                  <p>Ejercicios en clase<span class="suffix"> Práctica</span></p>
+                  
+          
+                </div>
+                <div class="footer">
+                
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribePolicial" data-whatever="@mdo">Subscribe</button>
+
+
+                <div class="modal fade" id="ModalSubscribePolicial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="ModalSubscribePolicial">Ingresa tus datos</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      <div class="modal-body">
+                      <?php
+                        include(HTML_DIR . 'formSubscribePolicial.html');
+                      ?>
+                      
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
+                      </div>
+                    </div>
+                  
+                 </div>
+              </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </div>
+
+      </div> <!-- row -->
+    </div>  <!--.container --> 
+  </div>  <!--.page-section --> 

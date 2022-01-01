@@ -1,9 +1,9 @@
 <?php
 
 const SERVER = "localhost";
-const DB = "priston";
-const USER = "root";
-const PASS = "merino";
+const DB = "academia_priston";
+const USER = "academia_root";
+const PASS = "VewUn@N&X35H";
 const SGBD = "mysql:host =" . SERVER . "dbname=" . DB ;
 
 const METHOD = "AES-256-CBC";

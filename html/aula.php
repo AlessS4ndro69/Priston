@@ -53,7 +53,7 @@
                 <li class="breadcrumb-item active" ><?php echo $name?></li>
               </ul>
             </nav>
-            <h1 class="text-center"><a href="https://meet.google.com/vtf-jykb-gjp">Ingresar al aula</a></h1>
+            <h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>
           </div>
         </div>
       </div>
