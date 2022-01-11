@@ -1,54 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <meta name="copyright" content="MACode ID, https://macodeid.com/">
-
-  <title>AcademiaPriston.</title>
-
-  <link rel="stylesheet" href="assets/css/maicons.css">
-
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-
-  <link rel="stylesheet" href="assets/vendor/animate/animate.css">
-
-  <link rel="stylesheet" href="assets/css/theme.css">
-</head>
+<?php
+  // aqui empieza
+  include(HTML_DIR . 'overall/header.php');
+?>
 <body>
 
-  <!-- Back to top button -->
-  <div class="back-to-top"></div>
-  
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="300">
-        <div class="container">
-          <a href=base class="navbar-brand">Academia<span class="text-primary">Priston.</span></a>
+<!-- Back to top button -->
+<div class="back-to-top"></div>
 
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
+    <div class="container">
+        
+      <a href=base class="navbar-brand">Aprendo Fácil con <span class="text-primary">Priston.</span></a>
+      
+      
 
-          <div class="navbar-collapse collapsed" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href=base>Inicio</a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="https://drive.google.com/file/d/1XE7tI8lNhNJuio85lESbkIPv9473EaOI/view?usp=sharing">Temario</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://drive.google.com/drive/u/0/folders/1jPFVf9JqA5gRxgDrVTC_mdnh7xOhPQO2">Biblioteca </a>
-              </li>
-            </ul>
-          </div>
+<?php
+  include(HTML_DIR . 'overall/topnav.php');
+?>
+</header> 
 
-        </div>
-      </nav>
-
+<body>  
       <div class="container">
         <div class="page-banner">
           <div class="row justify-content-center align-items-center h-100">
@@ -59,7 +31,7 @@
                   <li class="breadcrumb-item active" ><?php echo $name?></li>
                 </ul>
               </nav>
-              <h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>
+              <!--<h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>-->
             </div>
           </div>
         </div>
@@ -162,37 +134,15 @@
 
 
 
-
-
-
-
-
-
-  <footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-lg-3 py-3">
-          <h3>Academia Priston</h3>
-          <p>Forjando Futuro, grupo educativo comprometido con el desarrollo academico del pais.</p>
-        </div>
-          
-        
-       
-      </div>
-
-      <p class="text-center" id="copyright">Copyright &copy; 2021. This template design and develop by <a href="https://macodeid.com/" target="_blank">MACode ID</a></p>
-    </div>
-  </footer>
-
-<script src="assets/js/jquery-3.5.1.min.js"></script>
-
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-
-<script src="assets/js/google-maps.js"></script>
-
-<script src="assets/vendor/wow/wow.min.js"></script>
-
-<script src="assets/js/theme.js"></script>
+  <?php
+  // en el body puedes enbeber funciones de php
+  //include(HTML_DIR.'overall/gallery.php');
+  include(HTML_DIR. 'overall/footer.php');
+?>
 
 </body>
 </html>
+
+
+
+

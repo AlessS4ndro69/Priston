@@ -11,6 +11,8 @@
     <div class="container">
         
       <a href=base class="navbar-brand">Aprendo Fácil con <span class="text-primary">Priston.</span></a>
+      
+      
 
 <?php
   include(HTML_DIR . 'overall/topnav.php');

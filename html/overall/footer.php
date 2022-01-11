@@ -6,9 +6,10 @@
           <p>Academia virtual comprometida con el desarrollo intelectual de la juventud.</p>
 
           <div class="social-media-button">
-            <a href="https://www.facebook.com/profile.php?id=100064984873323"><i class="mai-logo-facebook-f"></i></a>
+            <a href="https://www.facebook.com/prosoralex.tareas"><i class="mai-logo-facebook-f"></i></a>
             <a href="https://www.tiktok.com/@docente_nerito"><img src="assets/img/tiktok.svg" ></a>
              <a href="https://t.me/AcademiaPriston"><i class="mai-logo-telegram"></i></a>
+             <a href="https://wa.me/message/KXIXZ7HRFVJ7B1"><i class="mai-logo-whatsapp"></i></a>
           </div>
         </div>
         <div class="col-lg-3 py-3">
@@ -36,7 +37,7 @@
         </div>
       </div>
 
-      <p class="text-center" id="copyright">Copyright &copy; 2021. This template design and develop by <a href="https://macodeid.com/" target="_blank">MACode ID</a></p>
+      <p class="text-center" id="copyright">Copyright &copy; 2022. This template design and develop by <a href="https://macodeid.com/" target="_blank">MACode ID</a></p>
     </div>
   </footer>
 

@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
 
   <link rel="stylesheet" href="views/app/css/BannerLogosUniversidades.css">
-
+  <link rel="stylesheet" href="views/app/css/formUploadFile.css">
   
 
 </head>

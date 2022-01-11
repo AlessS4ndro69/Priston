@@ -5,48 +5,59 @@
         <div class="navbar-collapse collapse" id="navbarContent">
           
           <ul class="navbar-nav ml-auto">
+            
           <div class="img-fluid text-center">
               <img src="assets/img/logopriston.png" alt="">
-        </div>
+          </div>
             <!--<li class="nav-item">
                 <a class="nav-link" href="contact.html">Contacto</a>  
             </li> --> 
-            <li class="nav-item active">
-              <a class="nav-link" href="https://drive.google.com/file/d/1u44gvyuaQ0dwIylHWBzV6lCyd6gKmMGa/view?usp=sharing">Descarga pdf</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href=base>Inicio</a>
-            </li>
+            
             <?php
-            //if(!isset($_SESSION['app_id'])){ ?>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLogin" data-whatever="@mdo">Ingresar</button>
+              if(isset($_SESSION['docente'])){
+                include(HTML_DIR . 'formUploadFile.html');
+              }
+              // si estoy en index
+              if(!isset($_GET['view']) and isset($_SESSION['app_id'])){
 
-    
-            <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="ModalLogin" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLogin">LOGIN</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-              <?php
-                include(HTML_DIR . 'formLogin.html');
-
+                echo '<li class="nav-item active">
+                <a class="nav-link" href=index.php?view=sala>Aula virtual</a>
+                </li>';
+              }else{
+                echo '<li class="nav-item active">
+                <a class="nav-link" href=base>Inicio</a>
+                </li>';
+              }
               
-            //}?>
+            ?>
+            
 
-</div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="validate_login()">Ingresar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+            <?php
+            if(!isset($_SESSION['app_id'])){ 
+              echo '<li class="nav-item active">
+                      <a class="nav-link" href="https://drive.google.com/file/d/1u44gvyuaQ0dwIylHWBzV6lCyd6gKmMGa/view?usp=sharing">Descarga pdf</a>
+                  </li>';
+              include(HTML_DIR . 'formLogin.html');
               
+            }else{
+              echo '<li class="nav-item active">
+              <a class="nav-link" href="https://drive.google.com/file/d/1XE7tI8lNhNJuio85lESbkIPv9473EaOI/view?usp=sharing">Temario</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="https://drive.google.com/drive/u/0/folders/1jPFVf9JqA5gRxgDrVTC_mdnh7xOhPQO2">Biblioteca </a>
+              </li>';
+              //echo $_SESSION['app_id'];  
+              echo ' <li class="nav-item active">
+              <span class="text-primary">' . $_SESSION['name'] .' </span>
+              </li>';
+              echo ' <li class="nav-item active">
+              <a class="nav-link" href="index.php?view=logout"> <img src="assets/img/door-closed.svg"> <span class ="text-danger">Salir</span></a>  
+              </li>';
+              
+            }
+            
+            ?>  
             
             <!--<li class="nav-item">
               <a class="btn btn-primary ml-lg-2" href="#">Free Analytics</a>
