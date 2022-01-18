@@ -52,8 +52,8 @@ function goDownload(element) {
               //__('_AJAX_LOGIN_').innerHTML= connect.responseText;
               result= '<div class="alert alert-dismissible alert-danger">';
               result+= '<button type="button" class="close" data-dismiss="alert">x</button>';
-              result+='<strong>Archivo no encontrado</strong>';
-              result+='Por favor, verifique los datos   y vuelva a intentarlo.';
+              result+='<strong>Archivo no encontrado: </strong>';
+              result+='En un momento, el profesor subira el material de trabajo.';
               result+='</div>';
               __('portada').innerHTML= result;
             }

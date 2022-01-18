@@ -21,9 +21,11 @@
 </header> 
 
 <body>  
+      <div id = "portada">
+      </div>
       <div class="container">
         <div class="page-banner">
-          <div id = "portada">
+          
           <div class="portada">
               
               <div class = "wrap">
@@ -67,7 +69,7 @@
               <!--<h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>-->
             
           </div>
-          </div>
+          
           
           </div>
       </div>
