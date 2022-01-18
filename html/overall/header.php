@@ -25,6 +25,10 @@
 
   <link rel="stylesheet" href="views/app/css/BannerLogosUniversidades.css">
   <link rel="stylesheet" href="views/app/css/formUploadFile.css">
+  <link rel="stylesheet" href="views/app/css/sala.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
   
 
 </head>

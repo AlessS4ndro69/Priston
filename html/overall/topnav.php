@@ -36,7 +36,7 @@
             <?php
             if(!isset($_SESSION['app_id'])){ 
               echo '<li class="nav-item active">
-                      <a class="nav-link" href="https://drive.google.com/file/d/1u44gvyuaQ0dwIylHWBzV6lCyd6gKmMGa/view?usp=sharing">Descarga pdf</a>
+                      <a class="nav-link" href="files/Curriculum Vitae.pdf">Descarga pdf</a>
                   </li>';
               include(HTML_DIR . 'formLogin.html');
               

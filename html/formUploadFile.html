@@ -5,7 +5,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ModalLogin">Subir material de Trabajo</h5>
+          <h5 class="modal-title" id="ModalLogin">Material de Trabajo</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -16,13 +16,39 @@
         <form action="uploadFile.php" class="form-upload" method="post" enctype="multipart/form-data"> 
             <div id= "_AJAX_LOGIN_">
                 <h1 class="form__title">Subir archivo</h1>
+                
+                <div class="container--flex">
+                  <label for="" class="form__label">Area</label>
+                  <select required name = "area">
+                    <option disabled >Seleccione el area</option>
+                    <optgroup label = "Física">
+                      <option value="Física 1">Física 1</option>
+                      <option value="Física 2">Física 2</option>
+                      <option value="Física 3">Física 3</option>
+                    </optgroup>
+                    <optgroup label = "Química">
+                      <option value="Química 1">Química 1</option>
+                      <option value="Química 2">Química 2</option>
+                      <option value="Química 3">Química 3</option>
+                    </optgroup>
+                    <optgroup label = "Matemática">
+                      <option value="Álgebra">Álgebra</option>
+                      <option value="Aritmética">Aritmética</option>
+                      <option value="Geometría">Geometría</option>
+                      <option value="Raz.Matemático">Razonamiento Matemático</option>
+                      <option value="Psicotécnico">Psicotécnico</option>
+                      <option value="Trigonometría">Trigonometría</option>
+                      <option value="Matemática 1">Matemática 1</option>
+                    </optgroup>
+                    <optgroup label = "Lenguaje">
+                      <option value="Lenguaje">Lenguaje</option>
+                      <option value="Raz.Verbal">Razonamiento Verbal</option>
+                    </optgroup>
+                  </select>
+              </div>
                 <div class="container--flex">
                     <label for="" class="form__label">Tema</label>
                     <input type="text" class="form__input" name="tema" required>
-                </div>
-                <div class="container--flex">
-                    <label for="" class="form__label">Area</label>
-                    <input type="text" class="form__input" name="area" required>
                 </div>
                 <div class="container--flex">
                     <label for="" class="form__label">Fecha</label>

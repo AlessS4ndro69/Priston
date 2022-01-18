@@ -31,7 +31,12 @@
           require('core/bin/ajax/goLoginAdmin.php');
 
         break;
-      
+    
+      case 'download':
+        
+          require('core/bin/ajax/goDownload.php');
+
+        break;  
       //Si la variable es nula, simplemente redirecciona.
       default:
         header("locacion: index.php");

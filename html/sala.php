@@ -23,18 +23,50 @@
 <body>  
       <div class="container">
         <div class="page-banner">
-          <div class="row justify-content-center align-items-center h-100">
-            <div class="col-md-6">
-              <nav aria-label="Breadcrumb">
-                <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+          <div id = "portada">
+          <div class="portada">
+              
+              <div class = "wrap">
+                <div class = "widget">
+                  <div class = "fecha">
+                    <p id = "diaSemana" class = "diaSemana"></p>
+                    <p id = "dia" class = "dia"></p>
+                    <p>de</p>
+                    <p id = "mes" class = "mes"></p>
+                    <p>de</p>
+                    <p id = "year" class = "year"></p>
+                  </div>
+                  <div class = "reloj">
+                    <p id="horas" class = "horas"></p>
+                    <p>:</p>
+                    <p id="minutos" class = "minutos"></p>
+                    <p>:</p>
+                    <div class = "caja-segundos">
+                      <p id = "ampm" class="ampm"></p>
+                      <p id="segundos" class="segundos"></p>
+                    </div>
+                  </div>
+                  <div class = "recursos">
+                    <button id = "curso1" type="button" class="btn btn-info" onclick="goDownload(this)">Info</button>
+                    <button id = "curso2" type="button" class="btn btn-info" onclick="goDownload(this)">Info</button>
+                    <button id = "curso3" type="button" class="btn btn-info"onclick="goDownload(this)">Info</button>
+                  
+                  </div>
+                
+                </div>
+              
+              </div>
+             
+              <ul class="breadcrumb justify-content-center py-0 bg-transparent">
                   <li class="breadcrumb-item"><a >Bienvenido</a></li>
                   <li class="breadcrumb-item active" ><?php echo $name?></li>
                 </ul>
-              </nav>
               <!--<h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>-->
-            </div>
+            
           </div>
-        </div>
+          </div>
+          
+          </div>
       </div>
     </header>
 
@@ -125,6 +157,30 @@
               <h5 class="text-secondary">Matemática I</h5>
               <p>Conoce el estudio de la Geometría con aplicación en la vida real.</p>
               <a href="index.php?view=aula&course=Matematica I" class="btn btn-primary">Abrir curso</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/portadas/Quimica.png" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Química </h5>
+              <p>La química es el estudio de los átomos y las moléculas y sus interacciones.</p>
+              <a href="index.php?view=aula&course=Quimica" class="btn btn-primary">Abrir curso</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/portadas/Fisica.png" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Física</h5>
+              <p>Ciencia natural que estudia, mediante leyes fundamentales, la energía, la materia, el tiempo y el espacio, es decir, el universo mismo.</p>
+              <a href="index.php?view=aula&course=Fisica" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
