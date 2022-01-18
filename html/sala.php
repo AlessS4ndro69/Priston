@@ -49,10 +49,13 @@
                   <div class = "recursos">
                     <button id = "curso1" type="button" class="btn btn-info" onclick="goDownload(this)">Info</button>
                     <button id = "curso2" type="button" class="btn btn-info" onclick="goDownload(this)">Info</button>
-                    <button id = "curso3" type="button" class="btn btn-info"onclick="goDownload(this)">Info</button>
-                  
+                    <button id = "curso3" type="button" class="btn btn-info" onclick="goDownload(this)">Info</button>
                   </div>
-                
+                  <div class = "border border-light p-3 mb-4">
+                    <div class = "text-center">
+                      <button  type="button" class="btn btn-success" onclick="goAula(this)">Acceder al aula</button>
+                    </div>  
+                  </div>
                 </div>
               
               </div>

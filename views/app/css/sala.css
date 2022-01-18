@@ -49,6 +49,10 @@
     font-size: 2rem;
     display: block;
 }
-.recursos {
+.recursos{
     text-align: center;
+}
+.ingreso {
+    text-align: center;
+    width: 100%;
 }

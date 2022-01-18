@@ -67,3 +67,7 @@
     var intervalo2 = setInterval(actualizarCurso,1000*60*60*6); // cada 6 horas
 }())
 
+function goAula(element){
+    window.location.href="https://meet.google.com/sgu-rtzz-udd";
+}
+
