@@ -23,14 +23,21 @@
           ini_set('session.cookie_lifetime', 1800 );
         }*/
         //echo $dni;
-         //se le abre sesión al usuario por su id
-         $_SESSION['app_id']= $resulset['estudiante_id'];
-         $_SESSION['app_usuario']= $resulset['estudiante_dni'];
-         $_SESSION['time_online']= time() - (60*6);
-         $_GET['view'] = 'aula';
-         $_SESSION['name'] = $resulset['estudiante_nombre'];
-         //Pongo echo 1 para que ajax lo tome como un success y me redireccione al index
-        echo 1;
+        if(!$resulset['estudiante_activo']){
+          echo 2; // echo 2 para que ajax indique que falta pagar la pension
+        }else{
+            //se le abre sesión al usuario por su id
+          $_SESSION['app_id']= $resulset['estudiante_id'];
+          $_SESSION['app_usuario']= $resulset['estudiante_dni'];
+          $_SESSION['time_online']= time() - (60*6);
+          $_GET['view'] = 'aula';
+          $_SESSION['name'] = $resulset['estudiante_nombre'];
+          
+          
+          // echo 1 para que ajax lo tome como un success y me redireccione al index
+          echo 1;
+        }
+     
     }
     //verifico si existe ingreso de docente
     else {
@@ -64,11 +71,7 @@
         
         
     }
-
-
-
   }
-
   //No se recibieron datos en el formulario:
   else {
 

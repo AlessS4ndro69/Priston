@@ -56,8 +56,10 @@
                   <div class = "border border-light p-3 mb-4">
                     <div class = "text-center">
                       <button  type="button" class="btn btn-success" onclick="goAula(this)">Acceder al aula</button>
+                      
                     </div>  
                   </div>
+                  
                 </div>
               
               </div>
@@ -168,24 +170,72 @@
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
-              <img src="assets/img/portadas/Quimica.png" alt="">
+              <img src="assets/img/portadas/Quimica 1.png" alt="">
             </div>
             <div class="body">
-              <h5 class="text-secondary">Química </h5>
+              <h5 class="text-secondary">Química 1</h5>
               <p>La química es el estudio de los átomos y las moléculas y sus interacciones.</p>
-              <a href="index.php?view=aula&course=Quimica" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=aula&course=Quimica 1" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
-              <img src="assets/img/portadas/Fisica.png" alt="">
+              <img src="assets/img/portadas/Quimica 2.png" alt="">
             </div>
             <div class="body">
-              <h5 class="text-secondary">Física</h5>
+              <h5 class="text-secondary">Química 2</h5>
+              <p>La química es el estudio de los átomos y las moléculas y sus interacciones.</p>
+              <a href="index.php?view=aula&course=Quimica 2" class="btn btn-primary">Abrir curso</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/portadas/Quimica 3.png" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Química 3</h5>
+              <p>La química es el estudio de los átomos y las moléculas y sus interacciones.</p>
+              <a href="index.php?view=aula&course=Quimica 3" class="btn btn-primary">Abrir curso</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/portadas/Fisica 1.png" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Física 1</h5>
               <p>Ciencia natural que estudia, mediante leyes fundamentales, la energía, la materia, el tiempo y el espacio, es decir, el universo mismo.</p>
-              <a href="index.php?view=aula&course=Fisica" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=aula&course=Fisica 1" class="btn btn-primary">Abrir curso</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/portadas/Fisica 2.png" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Física 2</h5>
+              <p>Ciencia natural que estudia, mediante leyes fundamentales, la energía, la materia, el tiempo y el espacio, es decir, el universo mismo.</p>
+              <a href="index.php?view=aula&course=Fisica 2" class="btn btn-primary">Abrir curso</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/portadas/Fisica 3.png" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Física 3</h5>
+              <p>Ciencia natural que estudia, mediante leyes fundamentales, la energía, la materia, el tiempo y el espacio, es decir, el universo mismo.</p>
+              <a href="index.php?view=aula&course=Fisica 3" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>

@@ -43,21 +43,7 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="page-banner">
-        <div class="row justify-content-center align-items-center h-100">
-          <div class="col-md-6">
-            <nav aria-label="Breadcrumb">
-              <ul class="breadcrumb justify-content-center py-0 bg-transparent">
-                <li class="breadcrumb-item"><a >Bienvenido</a></li>
-                <li class="breadcrumb-item active" ><?php echo $name?></li>
-              </ul>
-            </nav>
-            <h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>
-          </div>
-        </div>
-      </div>
-    </div>
+  
   </header>
 
   <div class="page-section">
@@ -91,7 +77,8 @@
     
     $size = count($grabaciones);
     for($i = 0; $i < $size; ++$i) {
-        //echo $grabaciones[$i]['grabacion_link'];
+        echo $grabaciones[$i]['grabacion_pdf'];
+
       $msg='<div class="col-lg-4 py-3">
           <div class="card-blog">
             <div class="header">
@@ -103,7 +90,7 @@
               <h5 class="post-title">' . $grabaciones[$i]['grabacion_curso'] . ' - ' .  $grabaciones[$i]['grabacion_tema'] . '</a></h5>
               <div class="post-date">Fecha <a>' . $grabaciones[$i]['grabacion_fecha'] . '</a></div>
               <a href=' . $grabaciones[$i]['grabacion_link'] . '> <img src = "assets/img/icons/video.png" width="30" height="30">
-              <a href=' . $grabaciones[$i]['grabacion_pdf'] . '> <img src = "assets/img/icons/pdf.png" width="30" height="30">
+              <a href="' . $grabaciones[$i]['grabacion_pdf'] . '"> <img src = "assets/img/icons/pdf.png" width="30" height="30">
             </div>
           </div>
         </div>';

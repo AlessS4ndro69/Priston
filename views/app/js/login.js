@@ -34,7 +34,7 @@ function goLogin() {
           if(connect.responseText== 1){
             result= ' <div class="alert alert-dismissible alert-Success">';
             result +=    '<h4>Conectado</h4>';
-            result +=    '<p>Bienvenido usuario, estamos validando tus credenciales...</p></div>';
+            result +=    '<p>Bienvenido usuario, estamos validando tus credenciales...</p></div>';  
             __('_AJAX_LOGIN_').innerHTML= result;
             console.log("devolvio 1");
             //window.location.reload();
@@ -43,7 +43,17 @@ function goLogin() {
             //if(mode=1){window.location.href='/OcrendBB/admin/home.html';}
           }
           else{
-            __('_AJAX_LOGIN_').innerHTML= connect.responseText;
+            if(connect.responseText== 2){
+              result='<div class="alert alert-dismissible alert-danger">';
+              result+='<button type="button" class="close" data-dismiss="alert">x</button>';
+              result+='<strong>Usuario con falta de pago</strong>';
+              result+=' Por favor, ponerse al dia en el pago.';
+              result+='</div>';
+               __('_AJAX_LOGIN_').innerHTML= result;
+            }else{
+              __('_AJAX_LOGIN_').innerHTML= connect.responseText;
+            }
+            
           }
 
     }

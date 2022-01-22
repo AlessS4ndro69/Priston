@@ -11,7 +11,7 @@ $conexion->Conectar();
 
 
 $sql="SELECT grabacion_frame FROM grabacion";
-$sql2="SELECT grabacion_pdf FROM grabacion";
+$sql2="SELECT grabacion_pdf FROM grabacion WHERE grabacion_valoracion = 1";
 $frame= $conexion->get_datos($sql);
 $pdf = $conexion->get_datos($sql2);
 

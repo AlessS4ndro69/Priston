@@ -2,12 +2,12 @@
 
 
 
-function abrir_recurso(elemento){
-    var curso = elemento.innerHTML;
+function abrir_recurso(element){
+    var curso = element.innerHTML;
     console.log("entro");
     //window.location.href='downloadResource.php?course=' . curso;
     //window.location.href='downloadResource.php?course=' + curso ;
-    window.location.href="files/Física 1/Cuadrilateros/2022-01-17/004. TRIGONOMETRÍA  GUÍA 1 VERANO 2022.pdf"
+    window.location.href="ajax.php?mode=download?course=" + curso;
 }   
 
 function goDownload(element) {
@@ -40,11 +40,17 @@ function goDownload(element) {
               result= ' <div class="alert alert-dismissible alert-Success">';
               result +=    '<h4>Descarga exitosa!</h4></div>';
               
+              
               //__('portada').innerHTML= result;
-              __('portada').innerHTML= connect.responseText;
+              
               console.log("devolvio 1");
               //window.location.reload();
               window.location.href=connect.responseText;
+             //window.location.assign(connect.responseText);
+             
+              
+              
+
               //if(mode=0){window.location.reload();}
               //if(mode=1){window.location.href='/OcrendBB/admin/home.html';}
             }
