@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/example/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R files $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R config $DEPLOYPATH
     - /bin/cp -R core $DEPLOYPATH
@@ -13,6 +13,8 @@ deployment:
     - /bin/cp ajax.php $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp theme.css $DEPLOYPATH
+    - /bin/cp temario.html $DEPLOYPATH
+    - /bin/cp uploadFile.php $DEPLOYPATH
    
     
     
