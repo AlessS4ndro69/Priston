@@ -77,7 +77,7 @@
     
     $size = count($grabaciones);
     for($i = 0; $i < $size; ++$i) {
-        echo $grabaciones[$i]['grabacion_pdf'];
+        //echo $grabaciones[$i]['grabacion_pdf'];
 
       $msg='<div class="col-lg-4 py-3">
           <div class="card-blog">

@@ -17,6 +17,14 @@
               if(isset($_SESSION['docente'])){
                 include(HTML_DIR . 'formUploadFile.html');
               }
+              else{
+                echo '<li class="nav-item active">
+                <a class="nav-link" href="files/Curriculum Vitae.pdf">Descarga pdf</a>
+                </li>';
+                echo '<li class="nav-item active">
+                <a class="nav-link" href="index.php?view=seminario">Seminario</a>
+                </li>';
+              }
               // si estoy en index
               if(!isset($_GET['view']) and isset($_SESSION['app_id'])){
 
@@ -24,6 +32,7 @@
                 <a class="nav-link" href=index.php?view=sala>Aula virtual</a>
                 </li>';
               }else{
+                
                 echo '<li class="nav-item active">
                 <a class="nav-link" href=base>Inicio</a>
                 </li>';
@@ -34,10 +43,11 @@
 
             
             <?php
+            
+            
+            
             if(!isset($_SESSION['app_id'])){ 
-              echo '<li class="nav-item active">
-                      <a class="nav-link" href="files/Curriculum Vitae.pdf">Descarga pdf</a>
-                  </li>';
+              
               include(HTML_DIR . 'formLogin.html');
               
             }else{
@@ -84,52 +94,7 @@
     
 
     
-   <div class ="slider">
-     <ul>
-       <li><img src= "assets/img/LogoUniversidades/1.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/2.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/3.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/4.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/5.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/6.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/7.png"></li>                     
-       <li><img src= "assets/img/LogoUniversidades/8.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/9.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/10.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/11.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/12.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/13.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/14.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/15.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/16.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/17.png"></li>                     
-       <li><img src= "assets/img/LogoUniversidades/18.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/19.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/20.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/21.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/22.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/23.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/24.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/25.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/26.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/27.png"></li>                     
-       <li><img src= "assets/img/LogoUniversidades/28.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/29.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/30.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/31.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/32.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/33.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/34.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/35.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/36.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/37.png"></li>                     
-       <li><img src= "assets/img/LogoUniversidades/38.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/39.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/40.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/41.png"></li>
-       <li><img src= "assets/img/LogoUniversidades/42.png"></li>
-     </ul>
-   </div>
+   
 
                           
 <?php

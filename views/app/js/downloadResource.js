@@ -41,7 +41,7 @@ function goDownload(element) {
               result +=    '<h4>Descarga exitosa!</h4></div>';
               
               
-              //__('portada').innerHTML= result;
+              __('portada').innerHTML= result;
               
               console.log("devolvio 1");
               //window.location.reload();

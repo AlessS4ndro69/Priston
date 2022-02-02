@@ -1,7 +1,7 @@
 <?php
     // Si hubo $_POST, si se recibieron datos en el formulario:
 
-     
+  date_default_timezone_set('America/Lima');
   if(!empty($_POST['course']) || !empty($_GET['course'])){
 
     //Creamos la conexión:

@@ -37,6 +37,12 @@
           require('core/bin/ajax/goDownload.php');
 
         break;  
+
+      case 'upload':
+      
+        require('core/bin/ajax/goUpload.php');
+
+      break;  
       //Si la variable es nula, simplemente redirecciona.
       default:
         header("locacion: index.php");
