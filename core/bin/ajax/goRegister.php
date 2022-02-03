@@ -31,37 +31,8 @@
               //se crea una cookie de sesión:
               ini_set('session.cookie_lifetime', 1800 );
             }*/
-
-            echo '<div class="container">
-            <div class="row">
-            
-              <div class="modal-dialog">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                      
-                      </div>
-            
-                          <div class="modal-body">
-                            
-                            <div class="thank-you-pop">
-                              <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
-                              <h1 class="fs-title">Ya eres alumno!</h1>
-                              <h3 class="fs-subtitle"> Alumno anteriormente registrado </h3>
-                              <input type="button"  class="submit action-button"  value="Cerrar" onclick=window.location.href="index.php?view=sala" />
-                              
-                            </div>
-                              
-                          </div>
-            
-              </div>
-            </div>
-          </div>
-        </div>';
-          
-        
-
-      
-
+            // devuelve cero para indicar que ya existe el usuario
+            echo 0;
     }
     else {
       // insertamos el usuario a la base de datos

@@ -1,15 +1,15 @@
 
-function goRegister() {
+function goRegister(nform) {
 
     var connect, userFirstName, result,  dni, phone, city, email;
   
-    userFirstName= document.getElementById('fname').value;
+    userFirstName= document.getElementById('fname'+nform).value;
     
-    dni= document.getElementById('dnisuscribe').value;
-    phone= document.getElementById('phone').value;
-    city= document.getElementById('city').value;
+    dni= document.getElementById('dnisuscribe'+nform).value;
+    phone= document.getElementById('phone'+nform).value;
+    city= document.getElementById('city'+nform).value;
     //recibo = document.getElementById('recibo').value;
-    email = document.getElementById('email').value;
+    email = document.getElementById('email'+nform).value;
   
     //sesion= document.getElementById('session_login').checked ? true: false;
   
@@ -20,9 +20,9 @@ function goRegister() {
     
     connect= window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     console.log(connect.status);
-    if(connect)console.log("existe connec");
+    
     //Cuando haya un movimiento, petición, recepción o algo nuevo entre AJAX y PHP
-      connect.onreadystatechange= function(){
+    connect.onreadystatechange= function(){
   
       //Aquí todavía no se ha recibido información de PHP.. así que ponemos a esperar al usuario
       if(connect.readyState!= 4){
@@ -90,8 +90,37 @@ function goRegister() {
               //if(mode=1){window.location.href='/OcrendBB/admin/home.html';}
             }
             else{
-              __('_AJAX_LOGIN_').innerHTML= connect.responseText;
-              
+              //__('_AJAX_LOGIN_').innerHTML= connect.responseText;
+              if(connect.responseText== 2){
+                result = '<div class="container">';
+                result +='<div class="row">';
+                result +='<div class="modal-dialog">';
+                result +=      '<div class="modal-content">';
+                result +='<div class="modal-header">';
+                          
+                result += '</div>';
+                
+                result +=     '<div class="modal-body">';
+                                
+                result +=       '<div class="thank-you-pop">';
+                result +=         '<img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">';
+                result +=         '<h1 class="fs-title">Ya eres alumno!</h1>';
+                result +=         '<h3 class="fs-subtitle"> Alumno anteriormente registrado </h3>';
+                result +=         '<input type="button"  class="submit action-button"  value="Cerrar" onclick=window.location.href="index.php?view=sala" />';
+                        
+                result +=                '</div>';
+                                  
+                result +=     '</div>';
+                
+                result +='</div>';
+                result +='</div>';
+                result +='</div>';
+                result +='</div>';
+                __('_AJAX_LOGIN_').innerHTML= result;
+              }else{
+                __('_AJAX_LOGIN_').innerHTML= connect.responseText;
+              }
+             
             }
   
       }

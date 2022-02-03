@@ -121,27 +121,27 @@ include (HTML_DIR .'publicidad.html' );
               <p>Duración de 4 meses <span class="suffix"></span></p>
             </div>
             <div class="footer">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe1" data-whatever="@mdo">Subscribe</button>
 
 
-            <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="ModalSubscribe1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
+                      <h5 class="modal-title" id="exampleModalLabel1">Ingresa tus datos</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                   <div class="modal-body">
                   <?php
-                    include(HTML_DIR . 'formSubscribe.html');
+                    include(HTML_DIR . 'formSubscribeAnual.html');
                   ?>
                   
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate(1)">Iniciar</button>
                   </div>
                 </div>
               </div>
@@ -151,7 +151,7 @@ include (HTML_DIR .'publicidad.html' );
               </div>
             </div>
         <div class="col-lg-4 py-3 wow zoomIn">
-          <div class="card-pricing marked">
+          <div class="card-pricing ">
             <div class="header">
               <div class="pricing-type">Ciclo Verano Pre-inscripción</div>
               <div class="price">
@@ -171,27 +171,27 @@ include (HTML_DIR .'publicidad.html' );
             <div class="footer">
             
 
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Inscripción</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe2" data-whatever="@mdo">Inscripción</button>
 
 
-            <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="ModalSubscribe2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
+                      <h5 class="modal-title" id="exampleModalLabel2">Ingresa tus datos</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                   <div class="modal-body">
                   <?php
-                    include(HTML_DIR . 'formSubscribe.html');
+                    include(HTML_DIR . 'formSubscribeVerano.html');
                   ?>
                   
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
+                    <button type="button" class="btn btn-primary" onclick="validate(2)">Iniciar</button>
                   </div>
                 </div>
               </div>
@@ -222,27 +222,27 @@ include (HTML_DIR .'publicidad.html' );
                 <div class="footer">
                 
 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe" data-whatever="@mdo">Subscribe</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe3" data-whatever="@mdo">Subscribe</button>
 
 
-                <div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="ModalSubscribe3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="ModalSubscribe">Ingresa tus datos</h5>
+                          <h5 class="modal-title" id="exampleModalLabel3">Ingresa tus datos</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                       <div class="modal-body">
                       <?php
-                        include(HTML_DIR . 'formSubscribe.html');
+                        include(HTML_DIR . 'formSubscribePolicial.html');
                       ?>
                       
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" onclick="validate()">Iniciar</button>
+                        <button type="button" class="btn btn-primary" onclick="validate(3)">Iniciar</button>
                       </div>
                     </div>
                   </div>

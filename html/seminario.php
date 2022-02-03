@@ -63,10 +63,10 @@
       <div class="footer">
       
 
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe2" data-whatever="@mdo">Registro</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe1" data-whatever="@mdo">Registro</button>
 
 
-      <div class="modal fade" id="ModalSubscribe2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="ModalSubscribe1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
@@ -81,10 +81,11 @@
               include(HTML_DIR . 'formSeminarioPaypal.html');
             ?>
             
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary" onclick="validate()">Registro</button>
+              <button type="button" class="btn btn-primary" onclick="validate(1)">Registro</button>
             </div>
           </div>
         </div>
@@ -135,7 +136,7 @@
               
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary" onclick="validate()">Registro</button>
+              <button type="button" class="btn btn-primary" onclick="validate(2)">Registro</button>
             </div>
           </div>
         </div>

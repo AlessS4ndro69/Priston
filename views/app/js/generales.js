@@ -1,30 +1,31 @@
 // Wait for the DOM to be ready
-function validate() {
+function validate(nform) {
     
   var flag = 1;
   
-      var first_name = $('#fname').val();
+  
+      var first_name = $('#fname'+nform).val();
       //var last_name = $('#lname').val();
-      var dni = $('#dnisuscribe').val();
-      var city = $('#city').val();
-      var phone = $('#phone').val();
+      var dni = $('#dnisuscribe'+nform).val();
+      var city = $('#city'+nform).val();
+      var phone = $('#phone'+nform).val();
       //var recibo = $('#recibo').val();
-      var email = $('#email').val();
+      var email = $('#email'+nform).val();
   
   
       
   
       $(".error").remove();
   
-      if(flag)console.log("dni"+dni);
+      if(flag)console.log("nform "+nform+"....");
       if (first_name.length < 1) {
-        $('#fname').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        $('#fname'+nform).after('<h4 class="fs-subtitle">Completa este campo</h4>');
         console.log("bandera apagada firstana,");
         flag = 0;
       }
      
       if (dni.length < 1) {
-        $('#dnisuscribe').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        $('#dnisuscribe'+nform).after('<h4 class="fs-subtitle">Completa este campo</h4>');
         console.log("bandera apagada firstana,");
         flag = 0;
       }/* else {
@@ -37,7 +38,7 @@ function validate() {
 
       if (email.length < 1) {
         
-        $('#email').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        $('#email'+nform).after('<h4 class="fs-subtitle">Completa este campo</h4>');
         console.log("bandera apagada firstana,");
         flag = 0;
       }/*else{
@@ -51,12 +52,12 @@ function validate() {
       }*/
       
       if (city.length < 1) {
-        $('#city').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        $('#city'+nform).after('<h4 class="fs-subtitle">Completa este campo</h4>');
         console.log("bandera apagada firstana,");
         flag = 0;
       }
       if (phone.length < 1) {
-        $('#phone').after('<h4 class="fs-subtitle">Completa este campo</h4>');
+        $('#phone'+nform).after('<h4 class="fs-subtitle">Completa este campo</h4>');
         console.log("bandera apagada firstana,");
         flag = 0;
       }
@@ -71,7 +72,7 @@ function validate() {
       console.log(first_name);
       if(flag){
         console.log("bandera activa");
-        goRegister();
+        goRegister(nform);
       }
       
 }
