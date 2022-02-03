@@ -59,7 +59,7 @@
 
 <script src="views/app/js/registro.js"></script>
 
-<script src="views/app/js/sala.js"></script>
+
 
 <script src="views/app/js/downloadResource.js"></script>
 

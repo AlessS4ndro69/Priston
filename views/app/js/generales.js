@@ -1,7 +1,8 @@
 // Wait for the DOM to be ready
 function validate() {
     
-      var flag = 1;
+  var flag = 1;
+  
       var first_name = $('#fname').val();
       //var last_name = $('#lname').val();
       var dni = $('#dnisuscribe').val();
@@ -9,6 +10,9 @@ function validate() {
       var phone = $('#phone').val();
       //var recibo = $('#recibo').val();
       var email = $('#email').val();
+  
+  
+      
   
       $(".error").remove();
   

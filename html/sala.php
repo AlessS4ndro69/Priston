@@ -246,11 +246,11 @@
 
 
   <?php
-  // en el body puedes enbeber funciones de php
-  //include(HTML_DIR.'overall/gallery.php');
-  include(HTML_DIR. 'overall/footer.php');
-?>
-
+    // en el body puedes enbeber funciones de php
+    //include(HTML_DIR.'overall/gallery.php');
+    include(HTML_DIR. 'overall/footer.php');
+  ?>
+  <script src="views/app/js/sala.js"></script>
 </body>
 </html>
 

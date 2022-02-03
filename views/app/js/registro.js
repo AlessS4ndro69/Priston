@@ -108,8 +108,10 @@ function goRegister() {
     connect.open('POST', 'ajax.php?mode=register', true);     
     connect.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     connect.send(form);
-    if(connect.status == 0)
-    console.log(connect.responseText);
+    if(connect.status == 0){
+      console.log(connect.responseText);
+    }
+    
     //window.location.href='index.php?view=sala';
   }
   

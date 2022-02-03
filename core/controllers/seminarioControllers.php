@@ -21,7 +21,7 @@
 </header>  
 
 <?php
-  include(HTML_DIR . 'seminario.html');
+  include(HTML_DIR . 'seminario.php');
 ?>
 
 
