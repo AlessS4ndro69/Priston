@@ -13,12 +13,12 @@
       <div class="row">
         <div class="col-lg-6">
             
-            <img src="files/1.1.png" class="img-fluid" alt="Responsive image" >
+            <img src="files/seminario1.png" class="img-fluid" alt="Responsive image" >
           
         </div>
         <div class="col-lg-6">
             
-          <img src="files/1.2.png" class="img-fluid" alt="Responsive image" >
+          <img src="files/seminario2.png" class="img-fluid" alt="Responsive image" >
         
         </div>
       </div>
@@ -26,12 +26,24 @@
       <div class="row">
         <div class="col-lg-6">
             
-            <img src="files/1.3.png" class="img-fluid" alt="Responsive image" >
+            <img src="files/seminario3.png" class="img-fluid" alt="Responsive image" >
           
         </div>
         <div class="col-lg-6">
             
-          <img src="files/1.4.png" class="img-fluid" alt="Responsive image" >
+          <img src="files/seminario4.png" class="img-fluid" alt="Responsive image" >
+        
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+            
+            <img src="files/seminario5.png" class="img-fluid" alt="Responsive image" >
+          
+        </div>
+        <div class="col-lg-6">
+            
+          <img src="files/seminario6.png" class="img-fluid" alt="Responsive image" >
         
         </div>
       </div>
@@ -66,11 +78,11 @@
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe1" data-whatever="@mdo">Registro</button>
 
 
-      <div class="modal fade" id="ModalSubscribe1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="ModalSubscribe1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos</h5>
+                <h5 class="modal-title" id="exampleModalLabel1">Ingresa tus datos</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -119,11 +131,11 @@
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSubscribe2" data-whatever="@mdo">Registro</button>
 
 
-      <div class="modal fade" id="ModalSubscribe2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="ModalSubscribe2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos</h5>
+                <h5 class="modal-title" id="exampleModalLabel2">Ingresa tus datos</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
