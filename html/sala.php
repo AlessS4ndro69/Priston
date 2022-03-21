@@ -1,26 +1,5 @@
-<?php
-  // aqui empieza
-  include(HTML_DIR . 'overall/header.php');
-?>
-<body>
 
-<!-- Back to top button -->
-<div class="back-to-top"></div>
-
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
-    <div class="container">
-        
-      <a href=base class="navbar-brand">Aprendo Fácil con <span class="text-primary">Priston.</span></a>
-      
-      
-
-<?php
-  include(HTML_DIR . 'overall/topnav.php');
-?>
-</header> 
-
-<body>  
+  <!--
       <div id = "portada">
       </div>
       <div class="container">
@@ -68,14 +47,14 @@
                   <li class="breadcrumb-item"><a >Bienvenido</a></li>
                   <li class="breadcrumb-item active" ><?php echo $name?></li>
                 </ul>
-              <!--<h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>-->
+              <h1 class="text-center"><a href="https://meet.google.com/sgu-rtzz-udd">Ingresar al aula</a></h1>
             
           </div>
           
           
           </div>
-      </div>
-    </header>
+      </div>-->
+    
 
    
     <div class="page-section">
@@ -245,14 +224,6 @@
 
 
 
-  <?php
-    // en el body puedes enbeber funciones de php
-    //include(HTML_DIR.'overall/gallery.php');
-    include(HTML_DIR. 'overall/footer.php');
-  ?>
-  <script src="views/app/js/sala.js"></script>
-</body>
-</html>
 
 
 

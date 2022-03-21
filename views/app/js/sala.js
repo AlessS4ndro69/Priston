@@ -65,6 +65,8 @@
     actualizarCurso();
     var intervalo = setInterval(actualizarHora,1000);
     var intervalo2 = setInterval(actualizarCurso,1000*60*60*6); // cada 6 horas
+
+    //animate();
 }())
 
 function goAula(element){

@@ -85,9 +85,14 @@
      <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
    </div>
  </div>
+<!--
+ <div id="animation">
+  </div>-->
+
  
 <?php
-include (HTML_DIR .'publicidad.html' );
+//include (HTML_DIR .'publicidad.html' );
+include (HTML_DIR .'sala.php' );
 ?>
 
 
