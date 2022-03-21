@@ -1,120 +1,91 @@
+import * as THREE from "./assets/js/three.module.js";
+import { OrbitControls } from "./assets/js/OrbitControls.js";
+
+//creating scene
+var scene = new THREE.Scene();
+scene.background = new THREE.Color(0xA8E3EF);
+
+//add camera
+var camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth/window.innerHeight
+);
+
+//renderer
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);        
+let div = document.createElement("div");
+document.body.appendChild(div);
+div.appendChild(renderer.domElement)
+//console.log(document);
 
 
-        //creating scene
-        var scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff);
+//add geometry
+var geometry = new THREE.BoxGeometry(1,1,3);
+var material = new THREE.MeshBasicMaterial({color: 0x5670F9, wireframe: false});
+var cube1 = new THREE.Mesh(geometry, material);
+var cube2 = cube1.clone();
+var cube3 = cube1.clone();
+var cube4 = cube1.clone();
+var cube5 = cube1.clone();
+var cube6 = cube1.clone();
+var cube7 = cube1.clone();
+cube1.position.x=-6;
+cube2.position.x=-4;
+cube3.position.x=-2;
+cube4.position.x=0;
+cube5.position.x=2;
+cube6.position.x=4;
+cube7.position.x=6;
+//var cube2 = new THREE.Mesh(geometry, material);
 
-        //add camera
-        var camera = new THREE.PerspectiveCamera(
-            75,
-            window.innerWidth/window.innerHeight
-        );
+//scene.add(cube);
+//scene.add(cube2);
 
-        //renderer
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        //add geometry
-        var geometry = new THREE.BoxGeometry(1,1,3);
-        var material = new THREE.MeshBasicMaterial({color: 0x00ff00, wireframe: true});
-        var geometry2 = geometry.clone();
-        var cube = new THREE.Mesh(geometry, material);
-        var cube2 = new THREE.Mesh(geometry2, material);
-
-        //scene.add(cube);
-        //scene.add(cube2);
-
-        camera.position.z = 9;
+camera.position.z = 9;
 // desde acaaaaaaaaa ------------
-        const bones = [];
 
-        const shoulder = new THREE.Bone();
-        const elbow = new THREE.Bone();
-        const hand = new THREE.Bone();
 
-        shoulder.add( elbow );
-        elbow.add( hand );
+const geometry3 = new THREE.CylinderGeometry( 5, 5, 5, 5, 15, 5, 30 );
 
-        bones.push( shoulder );
-        bones.push( elbow );
-        bones.push( hand );
+// create the skin indices and skin weights manually
+// (typically a loader would read this data from a 3D model for you)
 
-        shoulder.position.y = -5;
-        elbow.position.y = 0;
-        hand.position.y = 5;
+const position = geometry3.attributes.position;
 
-        const geometry3 = new THREE.CylinderGeometry( 5, 5, 5, 5, 15, 5, 30 );
 
-        // create the skin indices and skin weights manually
-        // (typically a loader would read this data from a 3D model for you)
+const group = new THREE.Group();
+group.add( cube1 );
+group.add( cube2 );
+group.add( cube3 );
+group.add( cube4 );
+group.add( cube5 );
+group.add( cube6 );
+group.add( cube7 );
 
-        const position = geometry3.attributes.position;
 
-        const vertex = new THREE.Vector3();
+scene.add( group );
 
-        const skinIndices = [];
-        const skinWeights = [];
-
-        for ( let i = 0; i < position.count; i ++ ) {
-
-            vertex.fromBufferAttribute( position, i );
-
-            // compute skinIndex and skinWeight based on some configuration data
-
-            const y = ( vertex.y + 1 );
-
-            const skinIndex = Math.floor( y / 4 );
-            const skinWeight = ( y % 4 ) / 4;
-
-            skinIndices.push( skinIndex, skinIndex + 1, 0, 0 );
-            skinWeights.push( 1 - skinWeight, skinWeight, 0, 0 );
-
-        }
-
-        geometry3.setAttribute( 'skinIndex', new THREE.Uint16BufferAttribute( skinIndices, 4 ) );
-        geometry3.setAttribute( 'skinWeight', new THREE.Float32BufferAttribute( skinWeights, 4 ) );
-
-        // create skinned mesh and skeleton
-
-        const mesh = new THREE.SkinnedMesh( geometry3, material );
-        const skeleton = new THREE.Skeleton( bones);
-
-        // see example from THREE.Skeleton
-
-        const rootBone = skeleton.bones[ 0 ];
-        mesh.add( rootBone );
-
-        // bind the skeleton to the mesh
-
-        mesh.bind( skeleton );
-
-        // move the bones and manipulate the model
-
-        skeleton.bones[ 0 ].rotation.x = -0.1;
-        skeleton.bones[ 1 ].rotation.x = 0.2;
-
-        scene.add(mesh);
-        //scene.add(cube2);
+//scene.add(cube2);
 // hasta acaaaaaaaaa ------------------
-        
-        //animation
-        var animate = function(){
-            requestAnimationFrame(animate);
 
-            skeleton.bones[ 0 ].rotation.x += -0.01;
-            skeleton.bones[ 0 ].rotation.y += -0.01;
-            skeleton.bones[ 1 ].rotation.x += 0.02;
-            skeleton.bones[ 1 ].rotation.y += 0.02;
+//animation
+var controls = new OrbitControls(camera, renderer.domElement);
+controls.minDistance = 8;
+controls.maxDistance = 10;
+controls.enableDamping = true;
+controls.maxPolarAngle = Math.PI/3;
 
-            renderer.render(scene, camera);
+var animate = function(){
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
 
-        }
+}
+animate();
 
-        animate();
-        /*
-        cube.rotation.x += 0;
-        mesh.rotation.x += THREE.MathUtils.degToRad(90);
-        //cube.rotation.y += 0.01;
-        renderer.render(scene, camera);
-*/
+
+group.rotation.x += THREE.MathUtils.degToRad(90);
+
+renderer.render(scene, camera);
+
+
