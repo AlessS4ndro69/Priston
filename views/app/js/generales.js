@@ -105,10 +105,10 @@ function validate_login() {
 function __(id){
     return document.getElementById(id);
 }
-
+/*
 function redirection(){
     setTimeout( function() { window.location.href = "index.php"; }, 1000 );
-}
+}*/
 
 function autop(){
   var iframe = document.getElementById("myFrame");
@@ -125,3 +125,4 @@ function autop(){
   }
 
 }
+

@@ -1,8 +1,9 @@
 <?php
   include(HTML_DIR . 'overall/header.php');
 ?>
-<body>
 
+
+<body>
 <!-- Back to top button -->
 <div class="back-to-top"></div>
 
@@ -10,7 +11,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
     <div class="container">
         
-      <a href=base class="navbar-brand">Aprendo Fácil con <span class="text-primary">Priston.</span></a>
+      <a href = base class="navbar-brand">Aprendo Fácil con <span class="text-primary">Priston.</span></a>
       
       
 

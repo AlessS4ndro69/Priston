@@ -43,6 +43,18 @@
         require('core/bin/ajax/goUpload.php');
 
       break;  
+
+      case 'votacion':
+      
+        require('core/bin/ajax/votacion.php');
+
+      break;  
+
+      case 'ranking':
+      
+        require('core/bin/ajax/ranking.php');
+
+      break;  
       //Si la variable es nula, simplemente redirecciona.
       default:
         header("locacion: index.php");

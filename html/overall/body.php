@@ -61,7 +61,7 @@
        <li><img src= "assets/img/LogoUniversidades/42.png"></li>
      </ul>
    </div>
-   
+  <!-- 
  <div class="container">
    <div class="page-banner home-banner">
    
@@ -84,11 +84,40 @@
      </div>
      <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
    </div>
- </div>
-<!--
- <div id="animation">
-  </div>-->
+ </div> -->
 
+ <div class="container">
+    
+        <div class="page-banner home-banner">
+        
+          <div class="row align-items-center  h-100">
+            <div class="col-md-6 py-1 wow fadeInLeft">
+              <h1 class="mb-4">Seminarios gratuitos todas las semanas</h1>
+              <h3 class="mb-4">Elige el curso que deseas reforzar.</h3>
+            </div>
+            <div class="col-md-6 py-5 wow zoomIn">
+              <div class = "fecha">
+                <ul  id = "courses" >
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      <div class="row align-items-center  h-300">
+        
+        <canvas id="canvas" width="1500" height="1000"></canvas> 
+        
+        <canvas id="canvastext" width="500" height="600">
+        <img src="./assets/img/black.jpg" alt="Girl in a jacket" width="500" height="600"> 
+        </canvas> 
+      </div>
+      <div class="row align-items-center  h-100">
+        <div id="barras">
+        </div>
+      </div>
+</div>
  
 <?php
 //include (HTML_DIR .'publicidad.html' );

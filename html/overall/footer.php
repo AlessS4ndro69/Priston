@@ -61,10 +61,8 @@
 
 <script src="views/app/js/registro.js"></script>
 
-<script src="views/app/js/animation.js"></script>
-
 <script src="views/app/js/downloadResource.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-
+<script type = "module" src="prueba.js"> </script>

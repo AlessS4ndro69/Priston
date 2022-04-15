@@ -12,11 +12,10 @@ $conexion->Conectar();
 
 $sql="SELECT grabacion_frame FROM grabacion";
 $sql2="SELECT grabacion_pdf FROM grabacion WHERE grabacion_valoracion = 1";
+$sql3="SELECT * FROM votacion_seminario";
 $frame= $conexion->get_datos($sql);
-$pdf = $conexion->get_datos($sql2);
-
 $n = rand(0, count($frame));
-
+$pdf = $conexion->get_datos($sql2);
 
 
 include('html/index/index.php');
