@@ -19,7 +19,7 @@
               }
               else{
                 echo '<li class="nav-item active">
-                <a class="nav-link" href="files/Curriculum Vitae.pdf">Descarga pdf</a>
+                <a class="nav-link" href="index.php?view=bancoEjercicios&course=Razonamiento">Ejercicios resueltos</a>
                 </li>';
                 echo '<li class="nav-item active">
                 <a class="nav-link" href="index.php?view=seminario">Seminario</a>

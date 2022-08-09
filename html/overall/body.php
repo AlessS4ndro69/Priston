@@ -109,10 +109,8 @@
         
         <canvas id="canvas" width="1500" height="1000"></canvas> 
         
-        <canvas id="canvastext" width="500" height="600">
-        <img src="./assets/img/black.jpg" alt="Girl in a jacket" width="500" height="600"> 
-        </canvas> 
       </div>
+
       <div class="row align-items-center  h-100">
         <div id="barras">
         </div>

@@ -9,8 +9,9 @@
     $course = $_POST['course'];
     $id = $_POST['id'] ;
     $points = $_SESSION['ranking'][$id]['puntaje'] + $_POST['points'] ;
-    
-    $sql = "UPDATE `votacion_seminario` SET `puntaje` = $points  WHERE `votacion_seminario`.`id` = $id";
+    $votantes = $_SESSION['ranking'][$id]['votantes'];
+
+    $sql = "UPDATE `votacion_seminario` SET `puntaje` = $points , `votantes` = $votantes   WHERE `votacion_seminario`.`id` = $id";
     //$sql="SELECT * FROM votacion_seminario";
     $resulset = $conexion->insertar($sql);
 
@@ -34,6 +35,7 @@
           
           // echo 1 para que ajax lo tome como un success y me redireccione al index
           $_SESSION['ranking'][$id]['puntaje'] = $points;
+          $_SESSION['ranking'][$id]['votantes'] = $votantes + 1;
           echo json_encode($_SESSION['ranking']);
         
      
