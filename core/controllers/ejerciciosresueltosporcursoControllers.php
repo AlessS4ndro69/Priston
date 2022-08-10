@@ -15,11 +15,10 @@ $name= $result['estudiante_nombre'];
 
 #$course = $_GET['course'];
 #$sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
-$sql = "SELECT DISTINCT bancoEjercicios_course FROM bancoEjercicios";
-$courses = $conexion->get_datos($sql);
+$course = $_GET['course'];
+$sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
+$exercises= $conexion->get_datos($sql);
 
-
-
-include(HTML_DIR . 'bancoEjercicios.php');
+include(HTML_DIR . 'ejerciciosResueltosPorCurso.php');
 
 ?>
