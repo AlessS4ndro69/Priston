@@ -55,6 +55,12 @@
         require('core/bin/ajax/ranking.php');
 
       break;  
+
+      case 'exercises':
+      
+        require('core/bin/ajax/ejerciciosResueltosPorCurso.php');
+
+      break;  
       //Si la variable es nula, simplemente redirecciona.
       default:
         header("locacion: index.php");

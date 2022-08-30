@@ -19,7 +19,8 @@
               }
               else{
                 echo '<li class="nav-item active">
-                <a class="nav-link" href="index.php?view=bancoEjercicios&course=Razonamiento">Ejercicios resueltos</a>
+                <a class="nav-link" href="index.php?view=bancoejercicios">Ejercicios resueltos</a>
+                
                 </li>';
                 echo '<li class="nav-item active">
                 <a class="nav-link" href="index.php?view=seminario">Seminario</a>

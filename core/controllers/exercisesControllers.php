@@ -70,49 +70,8 @@
   <div class="page-section">
     <div class="container">
     
-      <div class="row my-5">
-        <?php
-        #print_r(array_values($courses));
-       
-        
-
-        $numberCourses = count($courses);
-        
-        for ($j = 0; $j < $numberCourses; $j++){
-          
-          $course=$courses[$j]['bancoEjercicios_course'];
-          $sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
-          $exercises= $conexion->get_datos($sql);
-
-          $a = 0;
-          $numberExercises = count($exercises);
-          for($i = 0; $i < $numberExercises; ++$i) {
-              //echo $exercises[$i]['grabacion_pdf'];
-            if($a<3){
-              $msg='<div class="col-lg-4 py-3">
-                <div class="card">
-                  <div class="header">
-                    <div class="post-thumb">
-                    <h5 class="post-title"> <a>' . $exercises[$i]['bancoEjercicios_course'] . ' - ' .  $exercises[$i]['bancoEjercicios_theme'] . '</a></h5>
-                    </div>
-                  </div>
-                  <div class="body">
-                    <div>' . $exercises[$i]['bancoEjercicios_link'] . '</div>
-                    <div class="post-date"> <a>' . $exercises[$i]['bancoEjercicios_enunciado'] . '</a></div>
-                  </div>
-                </div>
-              </div>';
-              
-            echo $msg;
-            }
-            $a=$a+1;
-          }
-          
-          
-          echo '<div class="container"><div class="row justify-content-md-center"><a href="index.php?view=ejerciciosresueltosporcurso&course=' . $course . '" class="btn btn-primary">Más ejercicios de ' . $course . '</a></div></div>';
-        }
-      
-        ?>
+      <div class="row my-5" id = 'canvaExercises'>
+                              <!--ESSSSSSSSPAAAAAAAAAAAACIOOOOOOOOOOOOO CANVAAAAAA EEJERRRRRRRCICIOSSSSSSSSSS-->
       </div>
   </div>
   </div>

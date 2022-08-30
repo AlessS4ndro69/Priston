@@ -72,11 +72,21 @@
     
       <div class="row my-5">
         <?php
+
+        if(isset($_GET['pg'])){
+          $pg = $_GET['pg'];
+        }else{
+          $pg = 0;
+        }  
+      
+
         #print_r(array_values($courses));
-          $numberExercises = count($exercises);  
-          for($i = 0; $i < $numberExercises; ++$i) {
+        $exercises = $_SESSION[$course];
+        $numberExercises = count($exercises);  
+          
+          for($i = $pg*3 ; $i < $pg*3+3; ++$i) {    // paginación de 3 en 3 ejercicios
               //echo $exercises[$i]['grabacion_pdf'];
-            
+            if($i< $numberExercises)
               $msg='<div class="col-lg-4 py-3">
                 <div class="card">
                   <div class="header">
@@ -89,16 +99,46 @@
                     <div class="post-date"> <a>' . $exercises[$i]['bancoEjercicios_enunciado'] . '</a></div>
                   </div>
                 </div>
-              </div>';
+              </div>
+              
+              ';
               
             echo $msg;
             
-        }
-      
-        ?>
+          }
+          ?>
       </div>
+    </div>
   </div>
-  </div>
+
+  
+
+  <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item ">
+      <?php 
+      if($pg > 0){
+        ?>
+        <a class="page-link" href="index.php?view=ejerciciosresueltosporcurso&course=<?php echo $course ?>&pg=<?php echo $pg-1?>" >Previous</a>
+      <?php
+      }
+      ?>
+      
+    </li>
+    
+    <li class="page-item active"><a class="page-link" href="index.php?view=ejerciciosresueltosporcurso&course=<?php echo $course ?>&pg=<?php echo $pg?>">Página <?php echo $pg?></a></li>
+    
+    <li class="page-item">
+      <?php  
+      if($pg*3<$numberExercises-1){
+      ?>
+      <a class="page-link" href="index.php?view=ejerciciosresueltosporcurso&course=<?php echo $course ?>&pg=<?php echo $pg+1?>">Next</a>
+      <?php  
+      }
+      ?>
+    </li>
+  </ul>
+</nav>
 
   <footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
     <div class="container">
@@ -126,11 +166,15 @@
 
 <script src="assets/js/theme.js"></script>
 
+<script src="assets/js/bootstrap.js"> </script>
+
+<script src="views/app/js/functions.js"></script>
+
 <script src="views/app/js/generales.js"></script>
 
-<script src="assets/js/three.js"></script>
 
 
-<script type = "module" src="prueba.js"> </script>
+
+
 </body>
 </html>

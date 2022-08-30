@@ -15,9 +15,18 @@ $name= $result['estudiante_nombre'];
 
 #$course = $_GET['course'];
 #$sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
+
+
+
 $course = $_GET['course'];
+
+
 $sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
-$exercises= $conexion->get_datos($sql);
+
+if(!isset($_SESSION[$course])){ 
+    $exercises= $conexion->get_datos($sql);
+    $_SESSION[$course] = $exercises;
+}
 
 include(HTML_DIR . 'ejerciciosResueltosPorCurso.php');
 

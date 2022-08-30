@@ -15,6 +15,7 @@
   
  </div> -->
 
+ <!--
  <div class ="slider">
      <ul>
        <li><img src= "assets/img/LogoUniversidades/1.png"></li>
@@ -61,8 +62,8 @@
        <li><img src= "assets/img/LogoUniversidades/42.png"></li>
      </ul>
    </div>
-  <!-- 
- <div class="container">
+    -->
+    <div class="container">
    <div class="page-banner home-banner">
    
      
@@ -71,9 +72,9 @@
      
        <div class="col-md-6 py-5 wow fadeInLeft">
          
-         <h1 class="mb-4">Inicia tu preparación con nosotros</h1>
-         <p class="text-lg text-grey mb-5">De la mano de docentes con amplia experiencia lograrás tu objetivo</p>
-         <a href="https://t.me/AcademiaPriston" class="btn btn-primary btn-split">Unete al grupo de Telegram <div class="fab"><span class="mai-logo-telegram"></span></div></a>
+         <h1 class="mb-4">Seras un mounstruo en matemática</h1>
+         <p class="text-lg text-grey mb-5">De la mano de Nerito lograrás tu objetivo</p>
+         <a href="https://chat.whatsapp.com/HfGLxUxLKDWJnM1brZWvnD" class="btn btn-primary btn-split">Material gratuito en el grupo de Whatsapp <div class="fab"><span class="mai-logo-whatsapp"></span></div></a>
        </div>
        <div class="col-md-6 py-5 wow zoomIn">
          <div class="img-fluid text-center">
@@ -84,7 +85,7 @@
      </div>
      <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
    </div>
- </div> -->
+ </div> 
 
  <div class="container">
     
@@ -93,6 +94,7 @@
           <div class="row align-items-center  h-100">
             <div class="col-md-6 py-1 wow fadeInLeft">
               <h1 class="mb-4">Seminarios gratuitos todas las semanas</h1>
+              <h3 class="mb-4">Ejercicios resueltos de matemática.</h3>
               <h3 class="mb-4">Elige el curso que deseas reforzar.</h3>
             </div>
             <div class="col-md-6 py-5 wow zoomIn">
@@ -115,7 +117,9 @@
         <div id="barras">
         </div>
       </div>
+      
 </div>
+
  
 <?php
 //include (HTML_DIR .'publicidad.html' );
