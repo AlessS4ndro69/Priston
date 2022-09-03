@@ -35,6 +35,16 @@
         <div class="navbar-collapse collapsed" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+                <form class="form-inline" action="index.php?view=busquedaejercicio" method = "post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Busqueda de ejercicio" name = "string" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                    <button type="submit"class="btn btn-primary">Buscar</a>
+                    </div>
+                </div>
+                </form>  
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href=base>Inicio</a>
             </li>
           </ul>
@@ -46,12 +56,22 @@
   
   </header>
 
+  <div class="container">
+        <div class="row justify-content-md-center">
+        <div class="col col-lg-3">
+        <h2>Resultados para: </h2>
+        </div>
+        </div>
+        <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+        <span class = "text-secondary"><h2><p class="font-italic"><?php echo $_SESSION['string']?></p></h2></span>
+        </div>
+        </div>
+  </div>
 
-
-
-  
     <div class="container">
     
+
       <div class="row my-5">
         <?php
 
@@ -63,12 +83,17 @@
       
 
         #print_r(array_values($courses));
-        $exercises = $_SESSION[$course];
         $numberExercises = count($exercises);  
-          
+        
+        if($numberExercises == 0){
+            $msg = '<span class = "text-secondary"><h2> No se encontraron resultados</h2></span>';
+            echo $msg;   
+        }
+
           for($i = $pg*3 ; $i < $pg*3+3; ++$i) {    // paginación de 3 en 3 ejercicios
               //echo $exercises[$i]['grabacion_pdf'];
-            if($i< $numberExercises)
+              
+            if($i< $numberExercises){
               $msg='<div class="col-lg-4 py-3">
                 <div class="card">
                   <div class="header">
@@ -82,12 +107,14 @@
                   </div>
                 </div>
               </div>
-              
+                
               ';
-              
-            echo $msg;
+              echo $msg;   
+            }
             
           }
+           
+          
           ?>
       </div>
     </div>
@@ -101,20 +128,20 @@
       <?php 
       if($pg > 0){
         ?>
-        <a class="page-link" href="index.php?view=ejerciciosresueltosporcurso&course=<?php echo $course ?>&pg=<?php echo $pg-1?>" >Previous</a>
+        <a class="page-link" href="index.php?view=busquedaejercicio&pg=<?php echo $pg-1?>" >Previous</a>
       <?php
       }
       ?>
       
     </li>
     
-    <li class="page-item active"><a class="page-link" href="index.php?view=ejerciciosresueltosporcurso&course=<?php echo $course ?>&pg=<?php echo $pg?>">Página <?php echo $pg?></a></li>
+    <li class="page-item active"><a class="page-link" href="index.php?view=busquedaejercicio&pg=<?php echo $pg?>">Página <?php echo $pg?></a></li>
     
     <li class="page-item">
       <?php  
       if($pg*3<$numberExercises-1){
       ?>
-      <a class="page-link" href="index.php?view=ejerciciosresueltosporcurso&course=<?php echo $course ?>&pg=<?php echo $pg+1?>">Next</a>
+      <a class="page-link" href="index.php?view=busquedaejercicio&pg=<?php echo $pg+1?>">Next</a>
       <?php  
       }
       ?>

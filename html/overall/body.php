@@ -1,20 +1,6 @@
 <?php
 //include (HTML_DIR .'vistaPreviaCursos.html' );
 ?>
- <!-- 16:9 aspect ratio -->
-
- 
-<!--
- <div class="container">
-     
-     <div class="d-flex justify-content-center">
-       <div class="embed-responsive embed-responsive-16by9">
-       <iframe class="embed-responsive-item" src=<?php echo $frame[$n]["grabacion_frame"]?>  width="720" height="540" allow="autoplay" loading = "lazy"></iframe>
-       </div>
-     </div>
-  
- </div> -->
-
  <!--
  <div class ="slider">
      <ul>
@@ -63,7 +49,7 @@
      </ul>
    </div>
     -->
-    <div class="container">
+  <div class="container">
    <div class="page-banner home-banner">
    
      
@@ -88,9 +74,7 @@
  </div> 
 
  <div class="container">
-    
-        <div class="page-banner home-banner">
-        
+        <div class="page-banner home-banner">        
           <div class="row align-items-center  h-100">
             <div class="col-md-6 py-1 wow fadeInLeft">
               <h1 class="mb-4">Seminarios gratuitos todas las semanas</h1>
@@ -115,9 +99,9 @@
 
       <div class="row align-items-center  h-100">
         <div id="barras">
+          
         </div>
-      </div>
-      
+      </div>      
 </div>
 
  

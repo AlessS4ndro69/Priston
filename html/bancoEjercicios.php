@@ -35,6 +35,16 @@
         <div class="navbar-collapse collapsed" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+            <form class="form-inline" action="index.php?view=busquedaejercicio" method = "post">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Busqueda de ejercicio" name = "string" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                <button type="submit"class="btn btn-primary">Buscar</a>
+                </div>
+              </div>
+            </form>  
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href=base>Inicio</a>
             </li>
           </ul>
