@@ -15,7 +15,7 @@ $name= $result['estudiante_nombre'];
 
 #$course = $_GET['course'];
 #$sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
-$sql = "SELECT DISTINCT bancoEjercicios_course FROM bancoEjercicios";
+$sql = "SELECT DISTINCT bancoEjercicios_course FROM banco_ejercicios";
 $courses = $conexion->get_datos($sql);
 
 

@@ -13,11 +13,9 @@ if(isset($_POST['string']))
 
 $string = $_SESSION['string'];
 
-$sql = "SELECT * FROM `academia_priston`.`bancoejercicios` WHERE (CONVERT(`bancoEjercicios_id` USING utf8) LIKE '%$string%' 
-    OR CONVERT(`bancoEjercicios_course` USING utf8) LIKE '%$string%' 
-    OR CONVERT(`bancoEjercicios_theme` USING utf8) LIKE '%$string%' 
-    OR CONVERT(`bancoEjercicios_link` USING utf8) LIKE '%$string%' 
-    OR CONVERT(`bancoEjercicios_enunciado` USING utf8) LIKE '%$string%')";
+$sql = "SELECT * FROM academia_priston.banco_ejercicios WHERE (CONVERT(bancoEjercicios_course USING utf8) LIKE '%$string%' 
+OR CONVERT(bancoEjercicios_theme USING utf8) LIKE '%$string%' 
+OR CONVERT(bancoEjercicios_enunciado USING utf8) LIKE '%$string%')";
 
 
 $exercises = $conexion->get_datos($sql);

@@ -91,7 +91,7 @@
         for ($j = 0; $j < $numberCourses; $j++){
           
           $course=$courses[$j]['bancoEjercicios_course'];
-          $sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
+          $sql="SELECT * FROM banco_ejercicios WHERE (bancoEjercicios_course='$course')";
           $exercises= $conexion->get_datos($sql);
 
           $a = 0;
