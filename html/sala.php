@@ -60,18 +60,7 @@
     <div class="page-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="assets/img/portadas/Aritmetica.png" alt="">
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Aritmética</h5>
-              <p>Dominarás las operaciones de la matemática </p>
-              <a href="index.php?view=aula&course=Aritmetica" class="btn btn-primary">Abrir curso</a>
-            </div>
-          </div>
-        </div>
+        
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
@@ -80,7 +69,7 @@
             <div class="body">
               <h5 class="text-secondary">Álgebra</h5>
               <p>Realizarás calculos de manera rapida y correcta</p>
-              <a href="index.php?view=aula&course=Algebra" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=ejerciciosresueltosporcurso&course=Algebra" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
@@ -92,12 +81,10 @@
             <div class="body">
               <h5 class="text-secondary">Razonamiento Matemático</h5>
               <p>Desarrollarás tu capacidad de razonar.</p>
-              <a href="index.php?view=aula&course=Razonamiento" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=ejerciciosresueltosporcurso&course=Razonamiento" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
@@ -106,10 +93,13 @@
             <div class="body">
               <h5 class="text-secondary">Psicotécnico</h5>
               <p>Clases practicas con ejercicios en vivo. </p>
-              <a href="index.php?view=aula&course=Psicotecnico" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=ejerciciosresueltosporcurso&course=Psicotecnico" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
@@ -118,7 +108,7 @@
             <div class="body">
               <h5 class="text-secondary">Trigonometría</h5>
               <p>Aprende de una manera diferente sin memorizar formulas.</p>
-              <a href="index.php?view=aula&course=Trigonometria" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=ejerciciosresueltosporcurso&course=Trigonometria" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
@@ -128,12 +118,25 @@
               <img src="assets/img/portadas/Geometria.png" alt="">
             </div>
             <div class="body">
-              <h5 class="text-secondary">Geometría</h5>
+              <h5 class="text-secondary">Geometría Plana</h5>
               <p>Conoce el estudio de la Geometría con aplicación en la vida real.</p>
-              <a href="index.php?view=aula&course=Geometria" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=ejerciciosresueltosporcurso&course=Geometria Plana" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/portadas/Geometria.png" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Geometría Analítica</h5>
+              <p>Dominarás las operaciones de la matemática </p>
+              <a href="index.php?view=ejerciciosresueltosporcurso&course=Geometria Analitica" class="btn btn-primary">Abrir curso</a>
+            </div>
+          </div>
+        </div>
+        <!--
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
@@ -142,11 +145,11 @@
             <div class="body">
               <h5 class="text-secondary">Matemática I</h5>
               <p>Conoce el estudio de la Geometría con aplicación en la vida real.</p>
-              <a href="index.php?view=aula&course=Matematica I" class="btn btn-primary">Abrir curso</a>
+              <a href="index.php?view=ejerciciosresueltosporcurso&course=Matematica I" class="btn btn-primary">Abrir curso</a>
             </div>
           </div>
         </div>
-        
+          -->
       </div>
     </div> <!-- .container -->
   </div> <!-- .page-section -->

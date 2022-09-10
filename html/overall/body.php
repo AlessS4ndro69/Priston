@@ -60,7 +60,7 @@
          
          <h1 class="mb-4">Seras un mounstruo en matemática</h1>
          <p class="text-lg text-grey mb-5">De la mano de Nerito lograrás tu objetivo</p>
-         <a href="https://chat.whatsapp.com/HfGLxUxLKDWJnM1brZWvnD" class="btn btn-primary btn-split">Material gratuito en el grupo de Whatsapp <div class="fab"><span class="mai-logo-whatsapp"></span></div></a>
+         <a href="https://chat.whatsapp.com/HfGLxUxLKDWJnM1brZWvnD" class="btn btn-primary btn-split">Material gratuito en Whatsapp <div class="fab"><span class="mai-logo-whatsapp"></span></div></a>
        </div>
        <div class="col-md-6 py-5 wow zoomIn">
          <div class="img-fluid text-center">

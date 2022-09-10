@@ -34,6 +34,16 @@
 
         <div class="navbar-collapse collapsed" id="navbarContent">
           <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+                <form class="form-inline" action="index.php?view=busquedaejercicio" method = "post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Busqueda de ejercicio" name = "string" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                    <button type="submit"class="btn btn-primary">Buscar</a>
+                    </div>
+                </div>
+                </form>  
+            </li>
             <li class="nav-item">
               <a class="nav-link" href=base>Inicio</a>
             </li>
@@ -65,10 +75,10 @@
         #print_r(array_values($courses));
         $exercises = $_SESSION[$course];
         $numberExercises = count($exercises);  
-          
+        
           for($i = $pg*3 ; $i < $pg*3+3; ++$i) {    // paginación de 3 en 3 ejercicios
               //echo $exercises[$i]['grabacion_pdf'];
-            if($i< $numberExercises)
+            if($i< $numberExercises){
               $msg='<div class="col-lg-4 py-3">
                 <div class="card">
                   <div class="header">
@@ -81,11 +91,10 @@
                     <div class="post-date"> <a>' . $exercises[$i]['bancoEjercicios_enunciado'] . '</a></div>
                   </div>
                 </div>
-              </div>
-              
-              ';
-              
-            echo $msg;
+              </div>';
+              echo $msg;
+            }  
+            
             
           }
           ?>
@@ -112,7 +121,7 @@
     
     <li class="page-item">
       <?php  
-      if($pg*3<$numberExercises-1){
+      if(($pg+1)*3<$numberExercises){
       ?>
       <a class="page-link" href="index.php?view=ejerciciosresueltosporcurso&course=<?php echo $course ?>&pg=<?php echo $pg+1?>">Next</a>
       <?php  
@@ -121,20 +130,53 @@
     </li>
   </ul>
 </nav>
-
-  <footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
+<div class = "container">
+  <div class="row justify-content-md-center">
+        <div class="col col-lg-10">
+        <span class = "text-secondary"><h2><p class="font-italic">Clases particulares con el profesor al whatsapp 925968311</p></h2></span>
+        </div>
+  </div>
+</div>
+<footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-lg-2 py-3">
-          <h3>Academia Priston</h3>
-          <p>Forjando Futuro, grupo educativo comprometido con el desarrollo academico del pais.</p>
+        <div class="col-lg-3 py-3">
+          <h3>Priston</h3>
+          <p>Academia virtual comprometida con el desarrollo intelectual de la juventud.</p>
+
+          <div class="social-media-button">
+            <a href="https://www.facebook.com/prosoralex.tareas"><i class="mai-logo-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@docente_nerito"><img src="assets/img/tiktok.svg" ></a>
+             <a href="https://t.me/AcademiaPriston"><i class="mai-logo-telegram"></i></a>
+             <a href="https://wa.me/message/KXIXZ7HRFVJ7B1"><i class="mai-logo-whatsapp"></i></a>
+          </div>
         </div>
-          
-         
-       
+        <div class="col-lg-3 py-3">
+          <h5>Compañia</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Acerca de nosotros</a></li>
+            <!--<li><a href="#">Career</a></li>-->
+            <li><a href="#">Terminos de servicio</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Contactanos</h5>
+          <!--<p>203 Fake St. Mountain View, San Francisco, California, USA</p>-->
+          <a href="#" class="footer-link">+51925968311</a>
+          <a href="#" class="footer-link">consultas@academiapriston.com</a>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Novedades</h5>
+          <p>Proximamente grandes sorpresas.</p>
+          <!--<form action="#">
+            <input type="text" class="form-control" placeholder="Enter your email..">
+            <button type="submit" class="btn btn-success btn-block mt-2">Subscribe</button>
+          </form>-->
+        </div>
       </div>
 
-      <p class="text-center" id="copyright">Copyright &copy; 2021. This template design and develop by <a href="https://macodeid.com/" target="_blank">MACode ID</a></p>
+      <p class="text-center" id="copyright">Copyright &copy; 2022. This template design and develop by <a href="https://macodeid.com/" target="_blank">MACode ID</a></p>
     </div>
   </footer>
 

@@ -21,7 +21,7 @@ $name= $result['estudiante_nombre'];
 $course = $_GET['course'];
 
 
-$sql="SELECT * FROM bancoEjercicios WHERE (bancoEjercicios_course='$course')";
+$sql="SELECT * FROM banco_ejercicios WHERE (bancoEjercicios_course='$course')";
 
 if(!isset($_SESSION[$course])){ 
     $exercises= $conexion->get_datos($sql);

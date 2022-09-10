@@ -9,7 +9,7 @@
             <a href="https://www.facebook.com/prosoralex.tareas"><i class="mai-logo-facebook-f"></i></a>
             <a href="https://www.tiktok.com/@docente_nerito"><img src="assets/img/tiktok.svg" ></a>
              <a href="https://t.me/AcademiaPriston"><i class="mai-logo-telegram"></i></a>
-             <a href="https://wa.me/message/KXIXZ7HRFVJ7B1"><i class="mai-logo-whatsapp"></i></a>
+             <a href="https://chat.whatsapp.com/HfGLxUxLKDWJnM1brZWvnD"><i class="mai-logo-whatsapp"></i></a>
           </div>
         </div>
         <div class="col-lg-3 py-3">
